@@ -4,7 +4,7 @@
 
 `DISCIPLINA: Trabalho Interdisciplinar Aplicações para Sustentabilidade`
 
-`Xº semestre/ANO`
+`5º semestre/2025`
 
 Escreva um ou dois parágrafos resumindo o objetivo do seu projeto.
 
