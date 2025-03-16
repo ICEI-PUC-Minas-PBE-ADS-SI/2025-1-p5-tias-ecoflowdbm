@@ -2,18 +2,10 @@
 
 Inclua todas as referências (livros, artigos, sites, etc.) utilizadas no desenvolvimento do trabalho.
 
-Exemplo:
+INDICADORES DE SUSTENTABILIDADE PARA A GESTÃO DE RESÍDUOS SÓLIDOS URBANOS." Revista Gestão & Sustentabilidade Ambiental , Palhoça, v. 21/01/2023.
 
-- BENYON, David. **Interação humano-computador**. 2. ed. São Paulo: Pearson Prentice Hall, 2011.
+NOGUEIRA, Luiz Henrique Gomes; FREGNANI, Luigi Palmigiano; MARTINS, Gabriel Galati. Sistema de inspeção automatizada de inteligência artificial aplicada na reciclagem de garrafas de vidro, 2023.
 
-- CORMEN, Thomas H et al. **Algoritmos:** teoria e prática. 4. ed. Rio de Janeiro: GEN LTC, 2024.
- 
-- ELMASRI, Ramez; NAVATHE, Sham. **Sistemas de banco de dados**. 7. ed. São Paulo: Pearson, c2019.
+POZZETTI, Valmir César; CALDAS, Jeferson Nepumuceno. O descarte de resíduos sólidos no âmago da sustentabilidade. Revista de Direito Econômico e Socioambiental, Curitiba, v. 10, n. 1, p. 183–205, 2019. DOI: 10.7213/rev.dir.econ.soc.v10i1.24021. Disponível em: https://periodicos.pucpr.br/direitoeconomico/article/view/24021. Acesso em: 10 mar. 2025.
 
-- RUSSELL, Stuart J.; NORVIG, Peter. **Inteligência artificial:** uma abordagem moderna. 4. ed. Rio de Janeiro, RJ: LTC, 2022.
-
-- SUTHERLAND, Jeffrey Victor; SUTHERLAND, J. J. **Scrum:** a arte de fazer o dobro do trabalho na metade do tempo. Rio de Janeiro, RJ: Sextante, 2019. 254 p.
-
-> **Links úteis**:
-> - [Padrão PUC Minas de normalização ABNT](http://portal.pucminas.br/biblioteca/documentos/GUIA-COMPLETO-ABNT-Elaborar-formatar-trabalho-cientificoNOVO.pdf)
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/)
+Stankevecz, F., & Dias, IC (2019). SISTEMA DE GESTÃO INTEGRADA PARA GESTÃO DE ESTOQUE EM UMA DISTRIBUIDORA DE BEBIDAS: UMA PROPOSTA BASEADA EM UM ESTUDO DE CASO. ITEGAM-JETIA , 5 (18), 58-64. 
