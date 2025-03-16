@@ -6,7 +6,7 @@
 
 `5º semestre/2025`
 
-Escreva um ou dois parágrafos resumindo o objetivo do seu projeto.
+O projeto EcoFlow DBM é uma solução inovadora para tornar a distribuição de bebidas mais sustentável, unindo tecnologia e responsabilidade ambiental. A Distribuidora de Bebidas Mendes (DBM) enfrenta desafios como o descarte inadequado de vasilhames retornáveis e a falta de um sistema eficiente para coleta e reciclagem. Esses problemas resultam no acúmulo de embalagens em domicílios e na ausência de uma gestão eficaz de resíduos.
 
 ## Integrantes
 
