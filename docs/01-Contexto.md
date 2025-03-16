@@ -42,9 +42,14 @@ O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estat�
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 ## Público-alvo
+<p align="justify">
+O público-alvo do projeto EcoFlow DBM é composto por diferentes perfis de usuários, cada um com necessidades e expectativas específicas em relação à aplicação. O primeiro grupo são os consumidores, que se dividem entre aqueles já conscientes da importância da sustentabilidade e os que ainda não se engajaram em práticas ecológicas. Os consumidores conscientes buscam participar ativamente do programa de devolução de vasilhames, motivados por benefícios como descontos ou recompensas. Já os não conscientes podem ser atraídos pela conveniência e pelas vantagens oferecidas, mesmo que inicialmente não se importem com a questão ambiental. Ambos os grupos têm familiaridade básica com tecnologia e valorizam uma experiência de usuário simples e intuitiva.</p>
+<p align="justify">
+O segundo grupo é formado pelos colaboradores da DBM, que incluem motoboys, o motorista da Fiorino, gerentes e funcionários administrativos e de gestão de estoque. Os motoboys e o motorista da Fiorino são responsáveis pela coleta de vasilhames durante suas rotas e precisam de ferramentas que otimizem seu trabalho, como mapas integrados e notificações. Os gerentes, por sua vez, buscam relatórios e indicadores que mostrem o desempenho do programa e o engajamento da equipe. Já os funcionários administrativos e de gestão de estoque necessitam de uma plataforma eficiente para cadastrar usuários, gerenciar pontos e controlar o fluxo de vasilhames devolvidos.</p>
+<p align="justify">
+Por fim, o projeto também impacta indiretamente a sociedade e a própria DBM. A sociedade se beneficia com a redução do descarte inadequado de resíduos e a promoção da economia circular. Já a DBM ganha uma imagem positiva como empresa sustentável, além de reduzir custos com a reutilização de vasilhames e a otimização de processos. Assim, o EcoFlow DBM atende a um público diversificado, promovendo a sustentabilidade de forma integrada e eficiente.</p>
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+
 
 Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
 
