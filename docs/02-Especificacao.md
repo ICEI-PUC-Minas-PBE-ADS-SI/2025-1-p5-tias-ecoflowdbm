@@ -6,18 +6,17 @@ A solução proposta é o desenvolvimento de uma aplicação web chamada EcoFlow
 
 ## Personas
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 <p align="justify">
 Persona 1: Ana Souza tem 32 anos, é professora e tem grande interesse por questões ambientais. Ela está sempre em busca de maneiras de contribuir para a sustentabilidade e se preocupa com o impacto que o consumo de bebidas tem no meio ambiente. Ana gostaria de devolver os vasilhames de bebidas de forma correta e ainda ser recompensada por isso. Está procurando um sistema que facilite o agendamento de coleta de vasilhames em sua casa e, ao mesmo tempo, ofereça benefícios, como descontos em compras futuras.
 
 <p align="justify">
  Persona 2: João Oliveira tem 45 anos, é autônomo e, embora não se importe muito com sustentabilidade, reconhece que é importante adotar práticas mais responsáveis. João está sempre em busca de benefícios práticos para suas compras e, caso seja conveniente para ele, se interessaria por participar de programas de reciclagem. Ele gostaria de entender como pode ganhar descontos ou outras vantagens ao devolver vasilhames, sem se preocupar tanto com a questão ecológica.
 <p align="justify">
-Pessoa 3: Pedro Santos tem 28 anos, é motoboy da DBM e tem como principal objetivo otimizar seu tempo durante as entregas. Ele está sempre buscando formas de tornar suas rotas mais eficientes e, por isso, precisa de informações claras sobre os pontos de coleta de vasilhames durante as entregas. Pedro quer garantir que todo o processo de coleta de vasilhames seja ágil e não atrapalhe sua rotina de trabalho.
+Persona 3: Pedro Santos tem 28 anos, é motoboy da DBM e tem como principal objetivo otimizar seu tempo durante as entregas. Ele está sempre buscando formas de tornar suas rotas mais eficientes e, por isso, precisa de informações claras sobre os pontos de coleta de vasilhames durante as entregas. Pedro quer garantir que todo o processo de coleta de vasilhames seja ágil e não atrapalhe sua rotina de trabalho.
 <p align="justify">
 Persona 4: Carlos Souza tem 45 anos, é motorista da Fiorino e trabalha na DBM. Ele tem como objetivo coletar vasilhames de forma eficiente durante suas rotas e contribuir para a sustentabilidade da empresa. Carlos gostaria de ter uma rota definida para coletar vasilhames descartados e receber informações claras sobre quantos vasilhames foram recolhidos em cada dia, para facilitar seu trabalho e garantir que tudo seja feito corretamente.
 <p align="justify">
-Pessoa  5: Fernanda Lima tem 40 anos, é gerente de uma unidade da DBM e tem como objetivo garantir que sua equipe esteja totalmente engajada no programa de devolução de vasilhames. Ela está sempre em busca de ferramentas que permitam acompanhar o desempenho da equipe e garantir que as metas de coleta e devolução sejam cumpridas. Fernanda quer ter um controle mais preciso sobre as atividades de sua unidade para melhorar a eficiência do processo.
+Persona 5: Fernanda Lima tem 40 anos, é gerente de uma unidade da DBM e tem como objetivo garantir que sua equipe esteja totalmente engajada no programa de devolução de vasilhames. Ela está sempre em busca de ferramentas que permitam acompanhar o desempenho da equipe e garantir que as metas de coleta e devolução sejam cumpridas. Fernanda quer ter um controle mais preciso sobre as atividades de sua unidade para melhorar a eficiência do processo.
 <p align="justify">
 Persona 6: Roberto Martins tem 55 anos, é dono da distribuidora DBM e deseja reduzir custos enquanto melhora a imagem da empresa com práticas sustentáveis. Roberto busca uma solução que ajude a empresa a monitorar o impacto do programa de devolução de vasilhames, especialmente na redução de custos operacionais e na satisfação dos clientes. Ele quer visualizar relatórios detalhados para tomar decisões estratégicas baseadas nos resultados obtidos.
 <p align="justify">
@@ -31,7 +30,7 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|cliente             | Solicitar  devolução de vasilhame  | Facilitar a devolução correta de vasilhames e incentivo a práticas sustentáveis             |
+|Cliente             | Solicitar  devolução de vasilhame  | Facilitar a devolução correta de vasilhames e incentivo a práticas sustentáveis             |
 |Cliente       | Solicitar  devolução de vasilhame                 | Conseguir pontos no sistemas de descontos |
 |Motoboy      | Receber informações sobre onde coletar Vasilhames                | Agilizar a coleta de vasilhames e otimizar sua rotina de entregas. |
 |Motorista       | Receber informações sobre a rota do dia definido                 | Garantir eficiência na coleta e contribuir para a sustentabilidade da empresa. |
