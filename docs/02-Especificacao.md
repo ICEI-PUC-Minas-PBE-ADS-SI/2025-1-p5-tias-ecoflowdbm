@@ -35,9 +35,9 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 |Motoboy      | Receber informações sobre onde coletar Vasilhames                | Agilizar a coleta de vasilhames e otimizar sua rotina de entregas. |
 |Motorista       | Receber informações sobre a rota do dia definido                 | Garantir eficiência na coleta e contribuir para a sustentabilidade da empresa. |
 |Gerente | Garantir que as metas de coleta e devolução sejam cumpridas | Melhorar a eficiência operacional |
-|Dono | Monitoramento do impacto do programa de devolução, especialmente na redução de custos operacionais | Reduzir custos e melhorar a imagem sustentável da empresa |
-|Funcionária | Uma plataforma simples e intuitiva para cadastrar usuários, gerenciar pontos de recompensa | Garantir que o sistema funcione sem falhas, mantendo os dados organizados e atualizados |
-|Funcionário | Um sistema que facilite o controle de entrada e saída de vasilhames, além do monitoramento do estado dos itens para garantir sua reutilização ou reciclagem | Assegurar a qualidade dos vasilhames, evitar desperdícios e garantir que a empresa tenha um estoque funcional e sustentável |
+|Dono | Monitorar impacto do programa de devolução, especialmente na redução de custos operacionais | Reduzir custos e melhorar a imagem sustentável da empresa |
+|Funcionária | Realizar cadastro de usuários, gerenciar pontos de recompensa | Garantir que o sistema funcione sem falhas, mantendo os dados organizados e atualizados |
+|Funcionário | Geranciar controle de entrada e saída de vasilhames, além do monitoramento do estado dos itens para garantir sua reutilização ou reciclagem | Assegurar a qualidade dos vasilhames, evitar desperdícios e garantir que a empresa tenha um estoque funcional e sustentável |
 
 ## Requisitos
 
@@ -47,40 +47,30 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| Permitir que o usuário cadastre  consumidores e colaboradores | ALTA | 
+|RF-002| Implementar sistema de pontuação e recompensas para quem devolver vasilhames   | ALTA |
+|RF-003| Permitir que o usuário agende a coleta de vasilhames a serem descartados  | ALTA |
+|RF-004| Emitir visualização de locais para coleta  | ALTA |
 
 ### Requisitos não funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em dispositivos móveis | MÉDIA | 
-|RNF-002| Deve processar as requisições do usuário em no máximo 3 segundos |  BAIXA | 
+|RNF-001| O sistema deve possuir Interface intuitiva e de fácil usabilidade | MÉDIA | 
+|RNF-002| O sistema deve ser responsivo |  MÉDIA | 
+|RNF-003| O sistema deve garantir a Segurança de dados dos usuários |  ALTA | 
+|RNF-004| O sistema deve possuir Escalabilidade para atender a um grande número de usuários | MÉDIA | 
 
-Com base nas histórias de usuários, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos não funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-
-Lembre-se de que cada requisito deve corresponder a uma e somente uma característica-alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas histórias de usuários foram cobertos.
 
 ## Restrições
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
 O projeto está restrito aos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|001| O projeto deverá ser entregue até o final do semestre |
+|001| O projeto deverá ser entregue até o final do 1º semestre 2025 |
 |002| O custo total do projeto não deve exceder o orçamento definido       |
+|003| Necessidade de treinamento dos colaboradores para uso do sistema       |
 
 ## Diagrama de casos de uso
 
