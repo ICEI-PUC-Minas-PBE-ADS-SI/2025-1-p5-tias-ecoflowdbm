@@ -1,8 +1,8 @@
 # Especificação do projeto
-
-O problema central do projeto é o descarte inadequado de vasilhames retornáveis pela Distribuidora de Bebidas Mendes (DBM), uma empresa de pequeno porte. Muitos consumidores acumulam esses recipientes em casa por falta de opções convenientes para devolução, enquanto vasilhames quebrados ou danificados são descartados no lixo comum, gerando impacto ambiental e desperdício de materiais recicláveis. Além disso, a DBM não possui processos estruturados para coletar, higienizar ou reutilizar esses vasilhames, resultando em custos adicionais e uma imagem pouco alinhada com as demandas por sustentabilidade.
-
-A solução proposta é o desenvolvimento de uma aplicação web chamada EcoFlow DBM, que permitirá aos consumidores agendar a coleta de vasilhames retornáveis em suas residências. A aplicação também incluirá um sistema de pontuação e recompensas para incentivar a participação, além de ferramentas para a DBM gerenciar os vasilhames coletados e monitorar o impacto ambiental do programa.
+<p align="justify">
+O problema central do projeto é o descarte inadequado de vasilhames retornáveis pela Distribuidora de Bebidas Mendes (DBM), uma empresa de pequeno porte. Muitos consumidores acumulam esses recipientes em casa por falta de opções convenientes para devolução, enquanto vasilhames quebrados ou danificados são descartados no lixo comum, gerando impacto ambiental e desperdício de materiais recicláveis. Além disso, a DBM não possui processos estruturados para coletar, higienizar ou reutilizar esses vasilhames, resultando em custos adicionais e uma imagem pouco alinhada com as demandas por sustentabilidade.</p>
+<p align="justify">
+A solução proposta é o desenvolvimento de uma aplicação web chamada EcoFlow DBM, que permitirá aos consumidores agendar a coleta de vasilhames retornáveis em suas residências. A aplicação também incluirá um sistema de pontuação e recompensas para incentivar a participação, além de ferramentas para a DBM gerenciar os vasilhames coletados e monitorar o impacto ambiental do programa.</p>
 
 ## Personas
 
