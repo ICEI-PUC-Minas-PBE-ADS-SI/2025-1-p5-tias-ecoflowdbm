@@ -24,10 +24,16 @@ No contexto da distribuidora de bebidas DBM, a ausência de um sistema estrutura
 Diante desse cenário, torna-se necessário o desenvolvimento de uma solução que incentive a devolução de vasilhames, reduza o impacto ambiental da distribuição de bebidas e fortaleça a economia circular, beneficiando tanto a empresa quanto a sociedade.</p>
 
 ## Objetivos
+<p align="justify">
+Desenvolver um software de gestão sustentável para a Distribuidora de Bebidas Mendes (DBM), que solucione o problema do descarte inadequado de vasilhames retornáveis e promova a reciclagem e reutilização desses materiais.</p>
 
-Aqui, você deve descrever os objetivos do trabalho, indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima.
+**Objetivos Específicos**
 
-Além disso, apresente alguns (pelo menos 3) objetivos específicos, dependendo de onde você pretende concentrar sua prática investigativa ou como deseja aprofundar seu trabalho.
+* **Facilitar a coleta de vasilhames**: Criar um sistema que permita aos consumidores agendar a coleta de vasilhames retornáveis em suas residências, utilizando a Fiorino da empresa para rotas semanais.
+
+* **Engajar consumidores e colaboradores**: Implementar um sistema de pontuação e recompensas que incentive a participação ativa no programa de devolução de vasilhames.
+
+* **Otimizar a gestão de resíduos**: Desenvolver ferramentas para monitorar e gerenciar os vasilhames coletados, garantindo sua reutilização ou reciclagem adequada.
  
 ## Justificativa
 <p align="justify">
