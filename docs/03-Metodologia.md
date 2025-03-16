@@ -66,6 +66,7 @@ Atualizado em: 16/03/2025
 | Arthur Gomes Murta        | Especificação do projeto  |    09/03/2025       | 16/03/2025 | ✔️    |   11/03/2025    |
 | Pedro Henrique Ribeiro       | Requisitos  |    07/03/2025        | 16/03/2025 | ✔️    |    07/03/2025   |
 | Robson Rodrigues de Oliveira       | Reunião com parceiro  |    05/03/2025        | 16/03/2025 | ✔️    |    05/03/2025   |
+| Lucas da Silva Souza        | Slides    | 16/03/2025     | 16/03/2025 | ✔️    |          16/03/2025       |
 
 #### Sprint 2
 
