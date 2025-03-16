@@ -15,12 +15,12 @@ Recomenda-se incluir dados como missão, visão e valores da organização, alé
 
 ## Problema
 <p align="justify">
-A indústria de distribuição de bebidas enfrenta desafios significativos relacionados à gestão de vasilhames retornáveis e resíduos de embalagens. O descarte inadequado desses materiais contribui para a degradação ambiental, impactando negativamente a economia circular e dificultando a adoção de práticas sustentáveis.
-
-Atualmente, muitos consumidores acumulam vasilhames em suas residências ou os descartam de maneira incorreta, devido à falta de incentivos ou de um sistema eficiente para a devolução e reciclagem. Essa situação agrava a geração de resíduos sólidos e reduz a reutilização de materiais que poderiam ser reaproveitados na cadeia produtiva.
-
-No contexto da distribuidora de bebidas DBM, a ausência de um sistema estruturado para a gestão de vasilhames retornáveis resulta em dificuldades logísticas, desperdício de recursos e custos operacionais elevados. A empresa carece de um mecanismo que permita o acompanhamento e a otimização desse processo, além de estratégias eficazes para engajar consumidores e colaboradores na adoção de práticas mais ecológicas.
-
+A indústria de distribuição de bebidas enfrenta desafios significativos relacionados à gestão de vasilhames retornáveis e resíduos de embalagens. O descarte inadequado desses materiais contribui para a degradação ambiental, impactando negativamente a economia circular e dificultando a adoção de práticas sustentáveis.</p>
+<p align="justify">
+Atualmente, muitos consumidores acumulam vasilhames em suas residências ou os descartam de maneira incorreta, devido à falta de incentivos ou de um sistema eficiente para a devolução e reciclagem. Essa situação agrava a geração de resíduos sólidos e reduz a reutilização de materiais que poderiam ser reaproveitados na cadeia produtiva.</p>
+<p align="justify">
+No contexto da distribuidora de bebidas DBM, a ausência de um sistema estruturado para a gestão de vasilhames retornáveis resulta em dificuldades logísticas, desperdício de recursos e custos operacionais elevados. A empresa carece de um mecanismo que permita o acompanhamento e a otimização desse processo, além de estratégias eficazes para engajar consumidores e colaboradores na adoção de práticas mais ecológicas.</p>
+<p align="justify">
 Diante desse cenário, torna-se necessário o desenvolvimento de uma solução que incentive a devolução de vasilhames, reduza o impacto ambiental da distribuição de bebidas e fortaleça a economia circular, beneficiando tanto a empresa quanto a sociedade.</p>
 
 ## Objetivos
@@ -30,10 +30,12 @@ Aqui, você deve descrever os objetivos do trabalho, indicando que o objetivo ge
 Além disso, apresente alguns (pelo menos 3) objetivos específicos, dependendo de onde você pretende concentrar sua prática investigativa ou como deseja aprofundar seu trabalho.
  
 ## Justificativa
-
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+<p align="justify">
+A escolha do projeto EcoFlow DBM justifica-se pela urgência em adotar práticas sustentáveis no setor de distribuição de bebidas, que tradicionalmente gera um grande volume de resíduos, especialmente com o uso de vasilhames retornáveis. A falta de um sistema eficiente para coleta e reciclagem desses materiais resulta em desperdício e impacto ambiental negativo, além de representar uma oportunidade perdida para a economia circular.</p>
+<p align="justify">
+A motivação para o desenvolvimento desta aplicação está alinhada com as demandas do mercado por soluções ecológicas e com a necessidade da DBM de se posicionar como uma empresa sustentável. Além disso, o projeto permite a aplicação prática de conhecimentos técnicos em desenvolvimento de software, integrando teoria e prática de forma significativa.</p>
+<p align="justify">
+Para embasar o projeto, é importante destacar que, em contextos semelhantes, consumidores e colaboradores de empresas do setor de bebidas costumam apontar a falta de opções para descarte adequado de vasilhames e demonstram interesse em participar de programas de reciclagem que ofereçam benefícios. Esses dados reforçam a relevância do projeto e sua potencial contribuição para a sustentabilidade e a satisfação dos stakeholders.</p>
 
 ## Público-alvo
 <p align="justify">
