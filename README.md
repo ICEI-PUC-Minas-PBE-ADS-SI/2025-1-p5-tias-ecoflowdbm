@@ -11,6 +11,7 @@ O projeto EcoFlow DBM é uma solução inovadora para tornar a distribuição de
 
 <p align="justify">
 Com o EcoFlow DBM, consumidores podem agendar coletas de forma simples, facilitando a logística e incentivando práticas sustentáveis. Além disso, o projeto fortalece o compromisso ambiental da DBM, engajando colaboradores e clientes na reciclagem e garantindo maior eficiência no gerenciamento interno dos resíduos.</p>
+
 ## Integrantes
 
 * Arthur Gomes Murta
