@@ -31,10 +31,10 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|cliente             | Solicitar  devolução de vasilhame  | Facilitar a devolução correta de vasilhames e incentivo a práticas sustentáveis             |
+|Cliente       | Solicitar  devolução de vasilhame                 | Conseguir pontos no sistemas de descontos |
+|Motoboy      | Receber informações sobre onde coletar Vasilhames                | Agilizar a coleta de vasilhames e otimizar sua rotina de entregas. |
+|Motorista       | Receber informações sobre a rota do dia definido                 | Garantir eficiência na coleta e contribuir para a sustentabilidade da empresa. |
 |Gerente | Garantir que as metas de coleta e devolução sejam cumpridas | Melhorar a eficiência operacional |
 |Dono | Monitoramento do impacto do programa de devolução, especialmente na redução de custos operacionais | Reduzir custos e melhorar a imagem sustentável da empresa |
 |Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
