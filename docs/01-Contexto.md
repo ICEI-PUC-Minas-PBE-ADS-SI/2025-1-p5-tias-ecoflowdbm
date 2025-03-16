@@ -14,11 +14,14 @@ Nesta seção, devem ser apresentadas informações essenciais sobre o cliente (
 Recomenda-se incluir dados como missão, visão e valores da organização, além de seu ramo de atuação, porte, nicho de mercado e principais desafios enfrentados. Também é relevante fornecer informações sobre sua localização, histórico, impacto social e possíveis demandas específicas. Quanto mais detalhadas forem essas informações, mais embasada será a análise do contexto, permitindo uma abordagem estratégica e alinhada às necessidades do cliente.
 
 ## Problema
-Aqui, a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.
+<p align="justify">
+A indústria de distribuição de bebidas enfrenta desafios significativos relacionados à gestão de vasilhames retornáveis e resíduos de embalagens. O descarte inadequado desses materiais contribui para a degradação ambiental, impactando negativamente a economia circular e dificultando a adoção de práticas sustentáveis.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
+Atualmente, muitos consumidores acumulam vasilhames em suas residências ou os descartam de maneira incorreta, devido à falta de incentivos ou de um sistema eficiente para a devolução e reciclagem. Essa situação agrava a geração de resíduos sólidos e reduz a reutilização de materiais que poderiam ser reaproveitados na cadeia produtiva.
 
-O grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite uma visão completa do problema.
+No contexto da distribuidora de bebidas DBM, a ausência de um sistema estruturado para a gestão de vasilhames retornáveis resulta em dificuldades logísticas, desperdício de recursos e custos operacionais elevados. A empresa carece de um mecanismo que permita o acompanhamento e a otimização desse processo, além de estratégias eficazes para engajar consumidores e colaboradores na adoção de práticas mais ecológicas.
+
+Diante desse cenário, torna-se necessário o desenvolvimento de uma solução que incentive a devolução de vasilhames, reduza o impacto ambiental da distribuição de bebidas e fortaleça a economia circular, beneficiando tanto a empresa quanto a sociedade.</p>
 
 ## Objetivos
 
