@@ -37,8 +37,8 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 |Motorista       | Receber informações sobre a rota do dia definido                 | Garantir eficiência na coleta e contribuir para a sustentabilidade da empresa. |
 |Gerente | Garantir que as metas de coleta e devolução sejam cumpridas | Melhorar a eficiência operacional |
 |Dono | Monitoramento do impacto do programa de devolução, especialmente na redução de custos operacionais | Reduzir custos e melhorar a imagem sustentável da empresa |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-|Funcionário         | Alterar permissões                 | Permitir que possam administrar contas |
+|Funcionária | Uma plataforma simples e intuitiva para cadastrar usuários, gerenciar pontos de recompensa | Garantir que o sistema funcione sem falhas, mantendo os dados organizados e atualizados |
+|Funcionário | Um sistema que facilite o controle de entrada e saída de vasilhames, além do monitoramento do estado dos itens para garantir sua reutilização ou reciclagem | Assegurar a qualidade dos vasilhames, evitar desperdícios e garantir que a empresa tenha um estoque funcional e sustentável |
 
 Apresente aqui as histórias de usuários que são relevantes para o projeto da sua solução. As histórias de usuários consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuários por contexto, para facilitar consultas recorrentes a esta parte do documento.
 
