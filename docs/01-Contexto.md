@@ -45,4 +45,4 @@ Por fim, o projeto também impacta indiretamente a sociedade e a própria DBM. A
 
 
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+
