@@ -9,9 +9,10 @@ O EcoFlow DBM surge como uma ferramenta estratégica para transformar a relaçã
 O projeto EcoFlow DBM é uma iniciativa extensionista que visa atender a essas demandas, proporcionando à empresa uma ferramenta tecnológica para promover a sustentabilidade e engajar seus stakeholders. Além disso, o projeto contribuirá para o impacto social da DBM, fortalecendo seu papel como agente de mudança na comunidade.</p>
 
 ## Cliente 
-A Distribuidora de Bebidas Mendes (DBM) é uma empresa de médio porte que atua no ramo de distribuição de bebidas, atendendo a clientes em sua região com um portfólio diversificado de produtos. A empresa tem como missão fornecer bebidas de qualidade, com eficiência logística e compromisso com o meio ambiente. Sua visão é ser reconhecida como referência em sustentabilidade no setor de distribuição, enquanto seus valores incluem responsabilidade social, inovação e respeito ao meio ambiente.
-
-A DBM enfrenta desafios como a falta de um sistema eficiente para gerenciar vasilhames retornáveis, o descarte inadequado de embalagens e a necessidade de se adaptar às demandas do mercado por práticas sustentáveis. Localizada em uma região com alta demanda por bebidas, a empresa busca soluções que reduzam seu impacto ambiental e melhorem sua imagem perante os consumidores.
+<p align="justify">
+A Distribuidora de Bebidas Mendes (DBM) é uma empresa de médio porte que atua no ramo de distribuição de bebidas, atendendo a clientes em sua região com um portfólio diversificado de produtos. A empresa tem como missão fornecer bebidas de qualidade, com eficiência logística e compromisso com o meio ambiente. Sua visão é ser reconhecida como referência em sustentabilidade no setor de distribuição, enquanto seus valores incluem responsabilidade social, inovação e respeito ao meio ambiente.</p>
+<p align="justify">
+A DBM enfrenta desafios como a falta de um sistema eficiente para gerenciar vasilhames retornáveis, o descarte inadequado de embalagens e a necessidade de se adaptar às demandas do mercado por práticas sustentáveis. Localizada em uma região com alta demanda por bebidas, a empresa busca soluções que reduzam seu impacto ambiental e melhorem sua imagem perante os consumidores.</p>
 
 
 ## Problema
