@@ -9,9 +9,9 @@ O EcoFlow DBM surge como uma ferramenta estratégica para transformar a relaçã
 O projeto EcoFlow DBM é uma iniciativa extensionista que visa atender a essas demandas, proporcionando à empresa uma ferramenta tecnológica para promover a sustentabilidade e engajar seus stakeholders. Além disso, o projeto contribuirá para o impacto social da DBM, fortalecendo seu papel como agente de mudança na comunidade.</p>
 
 ## Cliente 
-Nesta seção, devem ser apresentadas informações essenciais sobre o cliente (parceiro) para garantir um entendimento mais preciso do projeto como uma iniciativa extensionista.  
+A Distribuidora de Bebidas Mendes (DBM) é uma empresa de médio porte que atua no ramo de distribuição de bebidas, atendendo a clientes em sua região com um portfólio diversificado de produtos. A empresa tem como missão fornecer bebidas de qualidade, com eficiência logística e compromisso com o meio ambiente. Sua visão é ser reconhecida como referência em sustentabilidade no setor de distribuição, enquanto seus valores incluem responsabilidade social, inovação e respeito ao meio ambiente.
+A DBM enfrenta desafios como a falta de um sistema eficiente para gerenciar vasilhames retornáveis, o descarte inadequado de embalagens e a necessidade de se adaptar às demandas do mercado por práticas sustentáveis. Localizada em uma região com alta demanda por bebidas, a empresa busca soluções que reduzam seu impacto ambiental e melhorem sua imagem perante os consumidores.
 
-Recomenda-se incluir dados como missão, visão e valores da organização, além de seu ramo de atuação, porte, nicho de mercado e principais desafios enfrentados. Também é relevante fornecer informações sobre sua localização, histórico, impacto social e possíveis demandas específicas. Quanto mais detalhadas forem essas informações, mais embasada será a análise do contexto, permitindo uma abordagem estratégica e alinhada às necessidades do cliente.
 
 ## Problema
 <p align="justify">
