@@ -45,10 +45,9 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 - Documentação: Henrique Borelli Irenti de Melo, Lucas da Silva Souza e Robson Rodrigues de Oliveira
 
 #### Sprint 2
-- _Scrum master_: AlunaY
-- Desenvolvedor _front-end_: AlunoX
-- Desenvolvedor _back-end_: AlunoK
-- Testes: AlunaZ
+- _Scrum master_: Henrique Borelli Irenti de Melo
+- Pesquisa: Robson Rodrigues de Oliveira e Pedro Henrique Ribeiro
+- Documentação: Henrique Borelli Irenti de Melo, Lucas da Silva Souza e Arthur Gomes Murta
 
 ###  Quadro de tarefas
 
@@ -68,17 +67,34 @@ Atualizado em: 16/03/2025
 | Robson Rodrigues de Oliveira       | Reunião com parceiro  |    05/03/2025        | 16/03/2025 | ✔️    |    05/03/2025   |
 | Lucas da Silva Souza        | Slides    | 16/03/2025     | 16/03/2025 | ✔️    |          16/03/2025       |
 
+
+
 #### Sprint 2
 
-Atualizado em: 21/04/2024
+Atualizado em: 31/03/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Página inicial   | 01/02/2024     | 07/03/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
-| AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
-| AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
+| Arthur Gomes Murta        | Correções Sprint 1   | 17/03/2025     | 06/04/2025 | 📝     |       |
+| Robson Rodrigues de Oliveira        |Levantamento dos processos   | 17/03/2025    | 06/04/2025  | ✔️      |   24/04/2025              |
+| Henrique Borelli Irenti de Melo        | Modelagem processo AS-IS  | 17/03/2025      | 06/04/2025  | 📝    |                 |
+| Lucas da Silva Souza        |  Modelagem processo TO DO |  17/03/2025       | 06/04/2025  | 📝    |                  |
+| Pedro Henrique Ribeiro        | Respostas ao Questionário  |  17/03/2025     | 06/04/2025  | 📝     |                  |
+| Pedro Henrique Ribeiro       | Preenchimento formulário parcial  |  17/03/2025    | 06/04/2025  | 📝     |                  |
+| Todos Integrantes do Projeto      | Preparação da Apresentação |  17/03/2025     | 06/04/2025  | 📝     |                  |
 
+
+#### Sprint 3
+
+Atualizado em: 22/03/2024
+
+
+| Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
+| :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
+| AlunaX        | Página inicial   | 01/02/2024     | 07/03/2024 | ✔️     | 05/02/2024       |
+| AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝     |                 |
+| AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
+| AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌     |                  |****
 
 Legenda:
 - ✔️: terminado
