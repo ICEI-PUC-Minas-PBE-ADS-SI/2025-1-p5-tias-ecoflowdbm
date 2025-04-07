@@ -20,10 +20,10 @@ Figura 2: Gestão de Pedidos e Devolução
 Os diagramas BPMN abaixo ilustram os principais fluxos atuais:
 
 ![image](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-ecoflowdbm/blob/main/docs/images/ToBe_Reposi%C3%A7%C3%A3oEstoque.png)<br>
-Figura 1: Gestão de Estoque
+Figura 3: Gestão de Estoque
 
 ![image](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-ecoflowdbm/blob/main/docs/images/ToBe_PedidosDevolu%C3%A7%C3%A3o.png)<br>
-Figura 2: Gestão de Pedidos e Devolução
+Figura 4: Gestão de Pedidos e Devolução
 
 ## Modelagem dos processos
 
