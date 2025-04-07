@@ -24,20 +24,11 @@ Quanto à gerência de issues, o projeto adota a seguinte convenção para etiqu
 - `enhancement`: uma funcionalidade precisa ser melhorada
 - `feature`: uma nova funcionalidade precisa ser introduzida
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gestão de tags, merges, commits e branches é realizada. Discuta também como a gestão de issues foi feita.
-
-> **Links úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e GitHub](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
-> - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
-
 ## Planejamento do projeto
 
 ###  Divisão de papéis
 
-> Apresente a divisão de papéis entre os membros do grupo em cada Sprint. O desejável é que, em cada Sprint, o aluno assuma papéis diferentes na equipe. Siga o modelo do exemplo abaixo:
+Para garantir uma melhor organização, produtividade e colaboração entre os membros da equipe, foi adotada a prática de dividir as funções em cada Sprint do projeto. Abaixo, segue a divisão de funções por membro do grupo em cada Sprint, conforme o modelo sugerido.
 
 #### Sprint 1
 - _Scrum master_: Robson Rodrigues de Oliveira
@@ -77,16 +68,16 @@ Atualizado em: 31/03/2025
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | Arthur Gomes Murta        | Correções Sprint 1   | 17/03/2025     | 06/04/2025 | 📝     |       |
 | Robson Rodrigues de Oliveira        |Levantamento dos processos   | 17/03/2025    | 06/04/2025  | ✔️      |   24/04/2025              |
-| Henrique Borelli Irenti de Melo        | Modelagem processo AS-IS  | 17/03/2025      | 06/04/2025  | 📝    |                 |
-| Lucas da Silva Souza        |  Modelagem processo TO DO |  17/03/2025       | 06/04/2025  | 📝    |                  |
-| Pedro Henrique Ribeiro        | Respostas ao Questionário  |  17/03/2025     | 06/04/2025  | 📝     |                  |
-| Pedro Henrique Ribeiro       | Preenchimento formulário parcial  |  17/03/2025    | 06/04/2025  | 📝     |                  |
-| Todos Integrantes do Projeto      | Preparação da Apresentação |  17/03/2025     | 06/04/2025  | 📝     |                  |
+| Henrique Borelli Irenti de Melo        | Modelagem processo AS-IS  | 17/03/2025      | 06/04/2025  | ✔️   |   06/04/2025              |
+| Lucas da Silva Souza        |  Modelagem processo TO DO |  17/03/2025       | 06/04/2025  | ✔️   | 06/04/2025                 |
+| Pedro Henrique Ribeiro        | Respostas ao Questionário  |  17/03/2025     | 06/04/2025  | ✔️     |  06/04/2025                |
+| Pedro Henrique Ribeiro       | Preenchimento formulário parcial  |  17/03/2025    | 06/04/2025  | ✔️     |  06/04/2025                |
+| Todos Integrantes do Projeto      | Preparação da Apresentação |  17/03/2025     | 06/04/2025  | ✔️     |  06/04/2025                |
 
 
 #### Sprint 3
 
-Atualizado em: 22/03/2024
+Atualizado em: 07/04/2025
 
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
