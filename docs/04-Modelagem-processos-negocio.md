@@ -1,24 +1,13 @@
 # Modelagem dos processos de negócio
 
-<span style="color:red">Pré-requisitos: <a href="02-Especificacao.md"> Especificação do projeto</a></span>
-
-> **Links úteis**:
-> - [Modelagem de processos AS-IS x TO-BE](https://dheka.com.br/modelagem-as-is-to-be/)
-> - [20 dicas práticas de modelagem de processos](https://dheka.com.br/20-dicas-praticas-de-modelagem-de-processos/)
 
 ## Modelagem da situação atual (Modelagem AS IS)
 
-Apresente uma descrição textual de como os sistemas atuais resolvem o problema que seu projeto se propõe a resolver. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional.
-
-Com o tema do projeto definido, escolham alguns processos no contexto de negócios. Para ilustrar os potenciais ganhos com a automatização, imaginem processos manuais, ineficientes e/ou com muitas idas e vindas, gerando, assim, retrabalho. Colem aqui os modelos dos processos atuais (modelo AS-IS), elaborados com o apoio da ferramenta baseada em BPMN utilizada na disciplina.
+<p align="justify">Atualmente, o processo de gestão de coleta e retorno de garrafas é realizado de forma manual e descentralizada. A separação e o controle das garrafas retornáveis dependem da atuação direta dos usuários e dos estabelecimentos, sem um sistema automatizado que acompanhe o fluxo das garrafas ou registre suas movimentações. A comunicação entre os envolvidos ocorre por meios informais, o que dificulta o monitoramento em tempo real, gera riscos de falhas no controle logístico e torna o processo menos eficiente e escalável. Além disso, não há uma estrutura de monetização clara que garanta a sustentabilidade do projeto, nem um sistema que incentive a participação contínua dos usuários.
 
 ## Descrição geral da proposta (Modelagem TO BE)
 
-Tendo identificado os gargalos dos modelos AS-IS, apresentem uma descrição da proposta de solução, buscando maior eficiência com a introdução da tecnologia. Abordem também os limites dessa solução e seu alinhamento com as estratégias e objetivos do contexto de negócio escolhido.
-
-Cole aqui os modelos da solução proposta (modelo TO-BE), elaborados com o apoio da ferramenta baseada em BPMN utilizada na disciplina. Cada processo identificado deve ter seu modelo TO-BE específico. Descrevam as oportunidades de melhoria de cada processo da solução proposta.
-
-Apresente aqui uma descrição da sua proposta, abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente também as oportunidades de melhoria.
+<p align="justify">Com a implementação da plataforma web, o processo será automatizado e centralizado, proporcionando maior controle, rastreabilidade e eficiência. Os usuários poderão registrar a devolução das garrafas diretamente na plataforma, que calculará automaticamente os valores a serem recebidos e aplicará o percentual de monetização do projeto. A comunicação com os estabelecimentos será feita de forma padronizada, via sistema, e os dados serão armazenados de forma segura e acessível para análises futuras.
 
 ## Modelagem dos processos
 
