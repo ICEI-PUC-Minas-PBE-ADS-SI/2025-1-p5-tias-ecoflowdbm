@@ -4,7 +4,7 @@
 
 `DISCIPLINA: Trabalho Interdisciplinar Aplicações para Sustentabilidade`
 
-`5º semestre/2025`
+`1º semestre/2025`
 
 <p align="justify">
 O projeto EcoFlow DBM é uma solução inovadora para tornar a distribuição de bebidas mais sustentável, unindo tecnologia e responsabilidade ambiental. A Distribuidora de Bebidas Mendes (DBM) enfrenta desafios como o descarte inadequado de vasilhames retornáveis e a falta de um sistema eficiente para coleta e reciclagem. Esses problemas resultam no acúmulo de embalagens em domicílios e na ausência de uma gestão eficaz de resíduos.</p>
