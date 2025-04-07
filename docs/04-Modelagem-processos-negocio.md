@@ -34,15 +34,16 @@ Figura 4: Gestão de Pedidos e Devolução
 
 ## Indicadores de desempenho
 
-Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Coloque no mínimo 5 indicadores.
 
-Use o seguinte modelo:
 
-| **Indicador** | **Objetivos** | **Descrição** | **Fonte de dados** | **Fórmula de cálculo** |
-| ---           | ---           | ---           | ---             | ---             |
-| Percentual de reclamações | Avaliar quantitativamente as reclamações | Percentual de reclamações em relação ao total de atendimentos | Tabela Reclamações | número total de reclamações / número total de atendimentos |
-| Taxa de requisições atendidas | Melhorar a prestação de serviços medindo a porcentagem de requisições atendidas| Mede a % de requisições atendidas na semana | Tabela Solicitações | (número de requisições atendidas / número total de requisições) * 100 |
-| Taxa de entrega de material | Manter controle sobre os materiais que estão sendo entregues | Mede % de material entregue dentro do mês | Tabela Pedidos | (número de pedidos entregues / número total de pedidos) * 100 |
+| Indicador                      | Objetivos                                                              | Descrição                                                                 | Fonte de dados       | Fórmula de design                                                                 |
+|-------------------------------|------------------------------------------------------------------------|---------------------------------------------------------------------------|-----------------------|------------------------------------------------------------------------------------|
+| Taxa de devolução de garrafas | Medir o engajamento dos usuários no programa de retorno                | Percentual de garrafas devolvidas em relação à quantidade distribuída     | Tabela Devoluções     | (nº de garrafas devolvidas / nº de garrafas distribuídas) * 100                   |
+| Tempo médio de coleta         | Avaliar a eficiência logística na coleta das garrafas                  | Tempo médio entre a solicitação de coleta e o recebimento do material     | Tabela Coletas        | soma dos tempos de coleta / número total de coletas                               |
+| Taxa de participação dos usuários | Medir o alcance do sistema entre o público-alvo                    | Percentual de usuários ativos em relação ao total de usuários cadastrados | Tabela Usuários        | (nº de usuários ativos / nº total de usuários cadastrados) * 100                  |
+| Eficiência financeira         | Acompanhar o retorno econômico da operação                             | Relação entre o valor arrecadado e os custos operacionais do sistema      | Tabela Financeiro      | (valor arrecadado - custo operacional) / custo operacional * 100                  |
+| Índice de satisfação dos usuários | Avaliar a qualidade do serviço prestado sob a ótica do usuário     | Média das notas atribuídas pelos usuários em pesquisas de satisfação      | Tabela Avaliações      | soma das notas atribuídas / número total de avaliações                            |
+
 
 
 Obs.: todas as informações necessárias para gerar os indicadores devem estar no diagrama de classe a ser apresentado posteriormente.
