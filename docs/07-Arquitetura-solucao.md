@@ -20,6 +20,9 @@ O desenvolvimento da solução proposta requer a existência de bases de dados q
 
 Utilizando a notação do DER (Diagrama Entidade-Relacionamento), elabore um modelo, usando alguma ferramenta, que contemple todas as entidades e atributos associados às atividades dos processos identificados. Deve ser gerado um único DER que suporte todos os processos escolhidos, visando, assim, uma base de dados integrada. O modelo deve contemplar também o controle de acesso dos usuários (partes interessadas nos processos) de acordo com os papéis definidos nos modelos do processo de negócio.
 
+![Tabela DER](images/TabelaDER.png)
+
+
 Apresente o modelo de dados por meio de um modelo relacional que contemple todos os conceitos e atributos apresentados na modelagem dos processos.
 
 ### Modelo ER
@@ -44,59 +47,8 @@ O Esquema Relacional corresponde à representação dos dados em tabelas juntame
 
 
 
-CREATE DATABASE ecoflow_dbm;
-USE ecoflow_dbm;
+![Script Banco de dados](images/script.png)
 
--- Tabela USUARIO
-CREATE TABLE usuario (
-    id_usuario INT AUTO_INCREMENT PRIMARY KEY,
-    nome_completo VARCHAR(150) NOT NULL,
-    email VARCHAR(150) NOT NULL UNIQUE,
-    senha VARCHAR(100) NOT NULL,
-    telefone VARCHAR(20),
-    endereco VARCHAR(150),
-    data_cadastro DATE DEFAULT CURRENT_DATE
-);
-
--- Tabela COLETA
-CREATE TABLE coleta (
-    id_coleta INT AUTO_INCREMENT PRIMARY KEY,
-    id_usuario INT NOT NULL,
-    quantidade_garrafas INT NOT NULL CHECK (quantidade_garrafas > 0),
-    data_coleta_disponivel DATE NOT NULL,
-    data_solicitacao DATE DEFAULT CURRENT_DATE,
-    FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario) ON DELETE CASCADE
-);
-
--- Tabela RECOMPENSA
-CREATE TABLE recompensa (
-    id_recompensa INT AUTO_INCREMENT PRIMARY KEY,
-    id_usuario INT NOT NULL UNIQUE,
-    valor DECIMAL(10,2) NOT NULL DEFAULT 0.00 CHECK (valor >= 0),
-    FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario) ON DELETE CASCADE
-);
-
--- Tabela SAQUE_PIX
-CREATE TABLE saque_pix (
-    id_saque INT AUTO_INCREMENT PRIMARY KEY,
-    id_usuario INT NOT NULL,
-    valor_saque DECIMAL(10,2) NOT NULL CHECK (valor_saque > 0),
-    chave_pix VARCHAR(100) NOT NULL,
-    data_solicitacao DATE DEFAULT CURRENT_DATE,
-    FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario) ON DELETE CASCADE
-);
-
--- Tabela CONFIGURACOES_CONTA
-CREATE TABLE configuracoes_conta (
-    id_usuario INT PRIMARY KEY,
-    email VARCHAR(150) NOT NULL UNIQUE,
-    telefone VARCHAR(20),
-    endereco VARCHAR(150),
-    senha VARCHAR(100) NOT NULL,
-    FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario) ON DELETE CASCADE
-);
-
-Esse script deverá ser incluído em um arquivo .sql na pasta [de scripts SQL](../src/db).
 
 
 ## Tecnologias
