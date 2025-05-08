@@ -56,28 +56,35 @@ Visão geral da interação do usuário por meio das telas do sistema. Apresente
 
 ### Tela principal do sistema
 
-Descrição da tela principal do sistema.
+Na tela principal o usuario podera acessar Configurações, Suporte, Cadastrar Coleta, Acompanhar Coletas, Histórico de coletas e Acessar a tela recompensas
 
-> Insira aqui a tela principal do sistema
-
-
-###  Telas do processo 1
-
-Descrição da tela relativa à atividade 1 do processo 1.
-
-> Insira aqui a tela da atividade 1
-
-Descrição da tela relativa à atividade 2 do processo 1.
-
-> Insira aqui a tela da atividade 2
+ ![Descrição da imagem](caminho/para/imagem.png)
 
 
-### Telas do processo 2
+###  Telas do processo 1 - LOGIN
 
-Descrição da tela relativa à atividade 1 do processo 2.
+O usuário poderá acessar o aplicativo com seu e-mail e senha, criar uma nova conta informando seus dados pessoais ou recuperar a senha caso tenha esquecido, garantindo acesso seguro e contínuo à plataforma EcoFlow DBM
 
-> Insira aqui a tela da atividade 1
+![Descrição da imagem](caminho/para/imagem.png)
 
-Descrição da tela relativa à atividade 2 do processo 2.
 
-> Insira aqui a tela da atividade 2
+
+### Telas do processo 2- Cadastrar, Acompanhar, Histórico, e Reesgate de recompensas
+
+Uma vez logado, o usuário terá acesso à tela principal, onde poderá cadastrar novas coletas, acompanhar coletas em andamento, consultar seu histórico e resgatar recompensas via Pix.
+
+![Descrição da imagem](caminho/para/imagem.png)
+
+
+### Telas do processo 3- Configuração
+
+Ao acessar a tela de configurações, o usuário poderá atualizar suas informações pessoais, como e-mail, telefone, endereço e senha, garantindo que seus dados estejam sempre atualizados.
+
+
+![Descrição da imagem](caminho/para/imagem.png)
+
+### Telas do processo 4- Suporte
+Ao acessar a tela de suporte, o usuário poderá entrar em contato direto com a equipe da EcoFlow DBM por meio do WhatsApp, recebendo atendimento rápido sempre que precisar de ajuda.
+
+![Descrição da imagem](caminho/para/imagem.png)
+
