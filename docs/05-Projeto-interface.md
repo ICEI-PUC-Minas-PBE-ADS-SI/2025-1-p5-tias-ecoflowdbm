@@ -11,7 +11,7 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 Fluxo de usuário (user flow) é uma técnica que permite ao desenvolvedor mapear todo o fluxo de navegação do usuário na aplicação. Essa técnica serve para alinhar os caminhos e as possíveis ações que o usuário pode realizar junto com os membros da equipe.
 
-![Fluxo Usuário](images/Fluxo.png)
+![|Etapas](images/Etapas.png)
 
 
 
@@ -58,14 +58,14 @@ Visão geral da interação do usuário por meio das telas do sistema. Apresente
 
 Na tela principal o usuario podera acessar Configurações, Suporte, Cadastrar Coleta, Acompanhar Coletas, Histórico de coletas e Acessar a tela recompensas
 
- ![Descrição da imagem](caminho/para/imagem.png)
+ ![Página Principal](images/Principal.png)
 
 
 ###  Telas do processo 1 - LOGIN
 
 O usuário poderá acessar o aplicativo com seu e-mail e senha, criar uma nova conta informando seus dados pessoais ou recuperar a senha caso tenha esquecido, garantindo acesso seguro e contínuo à plataforma EcoFlow DBM
 
-![Descrição da imagem](caminho/para/imagem.png)
+![Login](images/Login.png)
 
 
 
@@ -73,7 +73,7 @@ O usuário poderá acessar o aplicativo com seu e-mail e senha, criar uma nova c
 
 Uma vez logado, o usuário terá acesso à tela principal, onde poderá cadastrar novas coletas, acompanhar coletas em andamento, consultar seu histórico e resgatar recompensas via Pix.
 
-![Descrição da imagem](caminho/para/imagem.png)
+![Açoes da Aplicação](images/executar.png)
 
 
 ### Telas do processo 3- Configuração
@@ -81,10 +81,10 @@ Uma vez logado, o usuário terá acesso à tela principal, onde poderá cadastra
 Ao acessar a tela de configurações, o usuário poderá atualizar suas informações pessoais, como e-mail, telefone, endereço e senha, garantindo que seus dados estejam sempre atualizados.
 
 
-![Descrição da imagem](caminho/para/imagem.png)
+![Configuração](images/Config.png)
 
 ### Telas do processo 4- Suporte
 Ao acessar a tela de suporte, o usuário poderá entrar em contato direto com a equipe da EcoFlow DBM por meio do WhatsApp, recebendo atendimento rápido sempre que precisar de ajuda.
 
-![Descrição da imagem](caminho/para/imagem.png)
+![Descrição da imagem](images/suporte.png)
 
