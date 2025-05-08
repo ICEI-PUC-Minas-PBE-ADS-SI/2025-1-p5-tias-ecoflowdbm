@@ -42,49 +42,60 @@ O Esquema Relacional corresponde à representação dos dados em tabelas juntame
 
 ### Modelo físico
 
-Insira aqui o script de criação das tabelas do banco de dados.
 
-Veja um exemplo:
 
-```sql
--- Criação da tabela Medico
-CREATE TABLE Medico (
-    MedCodigo INTEGER PRIMARY KEY,
-    MedNome VARCHAR(100)
+CREATE DATABASE ecoflow_dbm;
+USE ecoflow_dbm;
+
+-- Tabela USUARIO
+CREATE TABLE usuario (
+    id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+    nome_completo VARCHAR(150) NOT NULL,
+    email VARCHAR(150) NOT NULL UNIQUE,
+    senha VARCHAR(100) NOT NULL,
+    telefone VARCHAR(20),
+    endereco VARCHAR(150),
+    data_cadastro DATE DEFAULT CURRENT_DATE
 );
 
--- Criação da tabela Paciente
-CREATE TABLE Paciente (
-    PacCodigo INTEGER PRIMARY KEY,
-    PacNome VARCHAR(100)
+-- Tabela COLETA
+CREATE TABLE coleta (
+    id_coleta INT AUTO_INCREMENT PRIMARY KEY,
+    id_usuario INT NOT NULL,
+    quantidade_garrafas INT NOT NULL CHECK (quantidade_garrafas > 0),
+    data_coleta_disponivel DATE NOT NULL,
+    data_solicitacao DATE DEFAULT CURRENT_DATE,
+    FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario) ON DELETE CASCADE
 );
 
--- Criação da tabela Consulta
-CREATE TABLE Consulta (
-    ConCodigo INTEGER PRIMARY KEY,
-    MedCodigo INTEGER,
-    PacCodigo INTEGER,
-    Data DATE,
-    FOREIGN KEY (MedCodigo) REFERENCES Medico(MedCodigo),
-    FOREIGN KEY (PacCodigo) REFERENCES Paciente(PacCodigo)
+-- Tabela RECOMPENSA
+CREATE TABLE recompensa (
+    id_recompensa INT AUTO_INCREMENT PRIMARY KEY,
+    id_usuario INT NOT NULL UNIQUE,
+    valor DECIMAL(10,2) NOT NULL DEFAULT 0.00 CHECK (valor >= 0),
+    FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario) ON DELETE CASCADE
 );
 
--- Criação da tabela Medicamento
-CREATE TABLE Medicamento (
-    MdcCodigo INTEGER PRIMARY KEY,
-    MdcNome VARCHAR(100)
+-- Tabela SAQUE_PIX
+CREATE TABLE saque_pix (
+    id_saque INT AUTO_INCREMENT PRIMARY KEY,
+    id_usuario INT NOT NULL,
+    valor_saque DECIMAL(10,2) NOT NULL CHECK (valor_saque > 0),
+    chave_pix VARCHAR(100) NOT NULL,
+    data_solicitacao DATE DEFAULT CURRENT_DATE,
+    FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario) ON DELETE CASCADE
 );
 
--- Criação da tabela Prescricao
-CREATE TABLE Prescricao (
-    ConCodigo INTEGER,
-    MdcCodigo INTEGER,
-    Posologia VARCHAR(200),
-    PRIMARY KEY (ConCodigo, MdcCodigo),
-    FOREIGN KEY (ConCodigo) REFERENCES Consulta(ConCodigo),
-    FOREIGN KEY (MdcCodigo) REFERENCES Medicamento(MdcCodigo)
+-- Tabela CONFIGURACOES_CONTA
+CREATE TABLE configuracoes_conta (
+    id_usuario INT PRIMARY KEY,
+    email VARCHAR(150) NOT NULL UNIQUE,
+    telefone VARCHAR(20),
+    endereco VARCHAR(150),
+    senha VARCHAR(100) NOT NULL,
+    FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario) ON DELETE CASCADE
 );
-```
+
 Esse script deverá ser incluído em um arquivo .sql na pasta [de scripts SQL](../src/db).
 
 
@@ -97,10 +108,10 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 
 | **Dimensão**   | **Tecnologia**  |
 | ---            | ---             |
-| Front-end      | HTML + CSS + JS + React |
+| Front-end      | HTML + CSS + JS  |
 | Back-end       | Node.js         |
 | SGBD           | MySQL           |
-| Deploy         | Vercel          |
+| Deploy         | A definir      |
 
 
 ## Hospedagem
