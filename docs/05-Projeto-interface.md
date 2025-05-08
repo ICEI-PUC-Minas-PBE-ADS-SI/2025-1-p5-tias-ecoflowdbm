@@ -69,7 +69,7 @@ O usuário poderá acessar o aplicativo com seu e-mail e senha, criar uma nova c
 
 
 
-### Telas do processo 2- Cadastrar, Acompanhar, Histórico, e Reesgate de recompensas
+### Telas do processo 2- Cadastrar, Acompanhar, Histórico, e Resgate de recompensas
 
 Uma vez logado, o usuário terá acesso à tela principal, onde poderá cadastrar novas coletas, acompanhar coletas em andamento, consultar seu histórico e resgatar recompensas via Pix.
 
