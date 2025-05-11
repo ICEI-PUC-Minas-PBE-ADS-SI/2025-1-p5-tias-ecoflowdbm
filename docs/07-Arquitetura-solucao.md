@@ -24,7 +24,9 @@ Com a utilização da notação Peter Chen, foi elaborado o Diagrama Entidade-Re
 
 ![Tabela DER](images/TabelaDER.png)
 
-![Tabela DER](images/DERrelacional.png)
+<p align="center">
+  <img src="images/DERrelacional.jpeg" alt="Tabela Relacional">
+</p>
 
 
 
