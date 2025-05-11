@@ -5,8 +5,9 @@
 
 ## Slides
 
-- [Apresentação Sprint 1](presentation/Aprensentação%20Sprint%201.pdf)
-- [Apresentação Sprint 2](presentation/Aprensentação%20Sprint%202.pdf)
+- [Apresentação Sprint 1](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-ecoflowdbm/blob/main/presentation/AprensentacaoSprint1.pdf)
+- [Apresentação Sprint 2](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-ecoflowdbm/blob/main/presentation/AprensentacaoSprint2.pdf)
+
 
 
 ## Vídeo
