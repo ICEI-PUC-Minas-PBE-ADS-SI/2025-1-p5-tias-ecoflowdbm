@@ -16,7 +16,7 @@ A solução será desenvolvida como uma aplicação web, acessível por navegado
 Responsável pela interação com o usuário e exibição das interfaces do sistema.
 
 - **Telas:** Login, Cadastro, Recuperação de Senha, Dashboard, Cadastro de Coleta, Histórico de Coleta, Acompanhar Coleta, Recompensas, Suporte, Configurações, Relatórios.
-- **Framework sugerido:** React.js
+- **Framework :** React.js
 
 **Funcionalidades:**
 - Envio de dados para a API (coletas, saques, atualizações).
@@ -29,7 +29,7 @@ Responsável pela interação com o usuário e exibição das interfaces do sist
 
 Responsável pelas regras de negócio, validações e comunicação entre frontend e banco de dados.
 
-- **Linguagem sugerida:** Node.js
+- **Linguagem :** Node.js
 
 **Funcionalidades:**
 - Autenticação, segurança e controle de acesso.
