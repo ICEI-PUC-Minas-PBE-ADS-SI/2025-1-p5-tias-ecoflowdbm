@@ -92,10 +92,20 @@ Explique como a hospedagem e o lançamento da plataforma foram realizados.
 
 ## Qualidade de software
 
-Conceituar qualidade é uma tarefa complexa, mas ela pode ser vista como um método gerencial que, por meio de procedimentos disseminados por toda a organização, busca garantir um produto final que satisfaça às expectativas dos stakeholders.
+A busca pela qualidade no desenvolvimento de software é essencial para garantir que o produto atenda às necessidades dos usuários finais e mantenha sua eficácia ao longo do tempo. De acordo com a norma ISO/IEC 25010, a qualidade de um software pode ser avaliada com base em um conjunto de características e subcaracterísticas que abrangem desde o desempenho técnico até a experiência do usuário.
 
-No contexto do desenvolvimento de software, qualidade pode ser entendida como um conjunto de características a serem atendidas, de modo que o produto de software atenda às necessidades de seus usuários. Entretanto, esse nível de satisfação nem sempre é alcançado de forma espontânea, devendo ser continuamente construído. Assim, a qualidade do produto depende fortemente do seu respectivo processo de desenvolvimento.
+No projeto EcoFlow DBM, que visa facilitar a logística reversa de garrafas retornáveis, a adoção de critérios de qualidade é ainda mais importante, pois envolve a confiabilidade dos dados, segurança das informações, usabilidade e a integridade das operações. Tendo em vista a limitação de tempo e recursos, a equipe adotará algumas subcaracterísticas específicas da norma ISO/IEC 25010, que melhor se adequam ao escopo e à criticidade do sistema.
 
-A norma internacional ISO/IEC 25010, que é uma atualização da ISO/IEC 9126, define oito características e 30 subcaracterísticas de qualidade para produtos de software. Com base nessas características e nas respectivas subcaracterísticas, identifique as subcaracterísticas que sua equipe utilizará como base para nortear o desenvolvimento do projeto de software, considerando alguns aspectos simples de qualidade. Justifique as subcaracterísticas escolhidas pelo time e elenque as métricas que permitirão à equipe avaliar os objetos de interesse.
+
+| característica  | Justificativa                                                                 | Métricas de Avaliação                              |
+|--------------------|-------------------------------------------------------------------------------|----------------------------------------------------|
+| Apreensibilidade   | Facilitar o entendimento inicial do sistema por novos usuários.              | Testes de usabilidade e tempo médio de adaptação   |
+| Operacionalidade   | Permitir que os usuários realizem ações básicas com facilidade.              | Percentual de tarefas realizadas sem ajuda         |
+| Confidencialidade  | Proteger informações sensíveis como e-mail, telefone e endereço.             | Verificação de autenticação e criptografia         |
+| Integridade        | Garantir que dados não sejam corrompidos ou alterados de forma indevida.     | Testes de integridade e consistência dos dados     |
+| Tempo de resposta  | Assegurar agilidade nas ações do aplicativo, principalmente em mobile.       | Tempo médio de carregamento das funcionalidades    |
+| Maturidade         | Promover estabilidade após atualizações e testes iniciais.                   | Número de falhas ou erros após implantação         |
+| Modularidade       | Permitir fácil manutenção e evolução do sistema no futuro.                   | Análise de coesão entre módulos e documentação     |
+
 
 
