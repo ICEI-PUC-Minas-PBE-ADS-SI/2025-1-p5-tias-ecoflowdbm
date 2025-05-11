@@ -58,7 +58,7 @@ Visão geral da interação do usuário por meio das telas do sistema. Apresente
 
 Na tela principal o usuario podera acessar Configurações, Suporte, Cadastrar Coleta, Acompanhar Coletas, Histórico de coletas e Acessar a tela recompensas
 
- ![Página Principal](images/Principal.png)
+ ![Página Principal](images/Page.png)
 
 
 ###  Telas do processo 1 - LOGIN
