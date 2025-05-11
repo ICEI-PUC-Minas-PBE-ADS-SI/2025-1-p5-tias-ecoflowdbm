@@ -10,4 +10,4 @@ STANKEVECZ, F.; DIAS, I. C. Sistema de gestão integrada para gestão de estoque
 
 MENDES, Neimar. Estudo de mercado para reinserção de embalagens de vidro. 2022. Disponível em: https://dspace.ifrs.edu.br/bitstream/handle/123456789/1437/1234567891437.pdf?sequence=1&isAllowed=y. Acesso em: 11 mar. 2025.
 
-CARVALHO, Humberto Mariano de. Estruturação de uma logística reversa de ativos retornáveis através de uma plataforma de entregas em domicílio. 2023. Disponível em: https://repositorio.fgv.br/server/api/core/bitstreams/43968c42-4673-4b97-8b43-1622c47beb73/content. Acesso em: 11 maio 2025.
+CARVALHO, Humberto Mariano de. Estruturação de uma logística reversa de ativos retornáveis através de uma plataforma de entregas em domicílio. 2023. Disponível em: https://repositorio.fgv.br/server/api/core/bitstreams/43968c42-4673-4b97-8b43-1622c47beb73/content. Acesso em: 11 mar. 2025.
