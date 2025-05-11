@@ -40,6 +40,11 @@ Para garantir uma melhor organização, produtividade e colaboração entre os m
 - Pesquisa: Robson Rodrigues de Oliveira e Pedro Henrique Ribeiro
 - Documentação: Henrique Borelli Irenti de Melo, Lucas da Silva Souza e Arthur Gomes Murta
 
+#### Sprint 3
+- _Scrum master_: Lucas da Silva Souza
+- Pesquisa: Robson Rodrigues de Oliveira e Pedro Henrique Ribeiro
+- Documentação: Henrique Borelli Irenti de Melo, Lucas da Silva Souza,Robson Rodrigues de Oliveira e Arthur Gomes Murta
+
 ###  Quadro de tarefas
 
 > Apresente a divisão de tarefas entre os membros do grupo e o acompanhamento da execução, conforme o exemplo abaixo.
@@ -62,11 +67,11 @@ Atualizado em: 16/03/2025
 
 #### Sprint 2
 
-Atualizado em: 06/04/2025
+Atualizado em: 10/05/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| Arthur Gomes Murta        | Correções Sprint 1   | 17/03/2025     | 06/04/2025 | 📝     |       |
+| Robson Rodrigues de Oliveira        | Correções Sprint 1   | 17/03/2025     | 06/04/2025 | ✔️     |  10/05/2025     |
 | Robson Rodrigues de Oliveira        |Levantamento dos processos   | 17/03/2025    | 06/04/2025  | ✔️      |   24/04/2025              |
 | Henrique Borelli Irenti de Melo        | Modelagem processo AS-IS  | 17/03/2025      | 06/04/2025  | ✔️   |   06/04/2025              |
 | Lucas da Silva Souza        |  Modelagem processo TO DO |  17/03/2025       | 06/04/2025  | ✔️   | 06/04/2025                 |
@@ -80,12 +85,19 @@ Atualizado em: 06/04/2025
 Atualizado em: 07/04/2025
 
 
+#### Sprint 2
+
+Atualizado em: 11/05/2025
+
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Página inicial   | 01/02/2024     | 07/03/2024 | ✔️     | 05/02/2024       |
-| AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝     |                 |
-| AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
-| AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌     |                  |****
+| Robson Rodrigues de Oliveira        |Protótipo da aplicação   | 07/04/2025    | 11/05/2025  | ✔️      |   11/05/2025              |
+| Lucas da Silva Souza       | Diagrama de classes | 07/04/2025       | 06/04/2025  | ✔️   |   11/05/2025             |
+| Pedro Henrique Ribeiro      |  Modelo Conceitual do Banco de Dados – DER |  07/04/2025         | 11/05/2025  | ✔️   | 11/05/2025                |
+| Pedro Henrique Ribeiro e Lucas da Silva Souza        | Modelo Lógico do Banco de Dados – DER |  07/04/2025      | 11/05/2025  | ✔️     |  11/05/2025            |
+| Henrique Borelli e Artur Gomes     | Elementos conceituais do banco mapeados num SGBD |  11/05/2025     | 11/05/2025  | ✔️     |  11/05/2025                |
+| Robson Rodrigues de Oliveira       | Scripts SQL para criação do Banco de Dados |  11/05/2025     | 11/05/2025  | ✔️     |  11/05/2025                |
+| Todos Integrantes do Projeto      | Preparação da Apresentação |  17/03/2025     | 11/05/2025  | ✔️     |  11/05/2025               |
 
 Legenda:
 - ✔️: terminado
@@ -94,21 +106,17 @@ Legenda:
 - ❌: não iniciado
 
 
-> **Links úteis**:
-> - [11 passos essenciais para implantar Scrum no seu projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-> - [Os papéis do Scrum e a verdade sobre cargos nessa técnica](https://www.atlassian.com/br/agile/scrum/roles)
+
 
 ### Processo
 
-Coloque informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
+O desenvolvimento do projeto EcoFlow DBM foi conduzido utilizando a metodologia ágil Scrum, com o objetivo de garantir organização, colaboração contínua e entregas incrementais. A equipe foi estruturada com os papéis fundamentais do Scrum: Scrum Master, Pesquisa e Documentação, promovendo reuniões regulares de planejamento, revisões de Sprint e retrospectivas.
+
+Para o gerenciamento eficiente das atividades e acompanhamento do progresso do projeto, foi utilizado o recurso GitHub Projects, onde foram criadas issues representando as tarefas técnicas e funcionais de cada Sprint. 
+
+Esse processo contribuiu para a organização das entregas, priorização de funcionalidades e melhor comunicação entre os integrantes do grupo, assegurando um ciclo de desenvolvimento contínuo e focado na entrega de valor ao usuário final.
  
-> **Links úteis**:
-> - [Planejamento e gestão ágil de projetos](https://pucminas.instructure.com/courses/87878/pages/unidade-2-tema-2-utilizacao-de-ferramentas-para-controle-de-versoes-de-software)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards)
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Como criar backlogs no GitHub](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial slack](https://slack.com/intl/en-br/)
+
 
 
 ## Relação de ambientes de trabalho
@@ -123,9 +131,9 @@ Exemplo: os artefatos do projeto são desenvolvidos a partir de diversas platafo
 
 | Ambiente                            | Plataforma                         | Link de acesso                         |
 |-------------------------------------|------------------------------------|----------------------------------------|
-| Repositório de código fonte         | GitHub                             | http://....                            |
-| Documentos do projeto               | GitHub                             | http://....                            |
-| Projeto de interface                | Figma                              | http://....                            |
-| Gerenciamento do projeto            | GitHub Projects                    | http://....                            |
-| Hospedagem                          | Vercel                             | http://....                            |
+| Repositório de código fonte         | GitHub                             | [http://.... ](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-ecoflowdbm)                           |
+| Documentos do projeto               | GitHub                             | [http://....](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-ecoflowdbm)                            |
+| Projeto de interface                | Figma                              | [http://.... ](https://www.figma.com/design/Mqi1j2yFVllhyIWU0P76ib/APP-EcoFlow-DBM?node-id=0-1&t=iQIJ1asjwoQMlIsn-1)                           |
+| Gerenciamento do projeto            | GitHub Projects                    | [http://....](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-ecoflowdbm)                            |
+| Hospedagem                          | A definir                           | http://....                            |
  
