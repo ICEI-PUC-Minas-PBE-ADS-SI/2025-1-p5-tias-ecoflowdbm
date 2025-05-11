@@ -22,11 +22,8 @@ Fluxo de usuário (user flow) é uma técnica que permite ao desenvolvedor mapea
 
 ## Wireframes
 
-São protótipos usados no design de interface para sugerir a estrutura de um site web e seu relacionamento entre suas páginas. Um wireframe web é uma ilustração que mostra o layout dos elementos fundamentais na interface.
-
-![Exemplo de wireframe](images/Wireframe.png)
+![Wireframes](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-ecoflowdbm/blob/main/docs/images/Wireframes.png)
  
-
 
 ## Interface do sistema
 
