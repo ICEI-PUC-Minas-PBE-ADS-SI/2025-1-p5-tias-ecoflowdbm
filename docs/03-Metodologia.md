@@ -82,20 +82,15 @@ Atualizado em: 10/05/2025
 
 #### Sprint 3
 
-Atualizado em: 07/04/2025
-
-
-#### Sprint 2
-
 Atualizado em: 11/05/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | Robson Rodrigues de Oliveira        |Protótipo da aplicação   | 07/04/2025    | 11/05/2025  | ✔️      |   11/05/2025              |
 | Lucas da Silva Souza       | Diagrama de classes | 07/04/2025       | 06/04/2025  | ✔️   |   11/05/2025             |
-| Pedro Henrique Ribeiro      |  Modelo Conceitual do Banco de Dados – DER |  07/04/2025         | 11/05/2025  | ✔️   | 11/05/2025                |
+| Lucas da Silva Souza       |  Modelo Conceitual do Banco de Dados – DER |  07/04/2025         | 11/05/2025  | ✔️   | 11/05/2025                |
 | Pedro Henrique Ribeiro e Lucas da Silva Souza        | Modelo Lógico do Banco de Dados – DER |  07/04/2025      | 11/05/2025  | ✔️     |  11/05/2025            |
-| Henrique Borelli e Artur Gomes     | Elementos conceituais do banco mapeados num SGBD |  11/05/2025     | 11/05/2025  | ✔️     |  11/05/2025                |
+| Robson Rodrigues de Oliveira     | Elementos conceituais do banco mapeados num SGBD |  11/05/2025     | 11/05/2025  | ✔️     |  11/05/2025                |
 | Robson Rodrigues de Oliveira       | Scripts SQL para criação do Banco de Dados |  11/05/2025     | 11/05/2025  | ✔️     |  11/05/2025                |
 | Todos Integrantes do Projeto      | Preparação da Apresentação |  17/03/2025     | 11/05/2025  | ✔️     |  11/05/2025               |
 
