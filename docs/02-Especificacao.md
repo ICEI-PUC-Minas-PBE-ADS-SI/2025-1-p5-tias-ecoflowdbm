@@ -50,7 +50,12 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 |RF-001| Permitir que o usuário cadastre  consumidores e colaboradores | ALTA | 
 |RF-002| Implementar sistema de pontuação e recompensas para quem devolver vasilhames   | ALTA |
 |RF-003| Permitir que o usuário agende a coleta de vasilhames a serem descartados  | ALTA |
-|RF-004| Emitir visualização de locais para coleta  | ALTA |
+|RF-004| Receber os endereços para coleta  | ALTA |
+|RF-005| Permitir que o usuário visualize o histórico de coletas realizadas| MÉDIA |
+|RF-006| Permitir que o usuário acompanhe o status de coleta  | MÉDIA |
+|RF-007| Permitir que o usuário realize saques via Pix das recompensas acumuladas  | ALTA |
+|RF-008| Permitir alteração de dados cadastrais na tela de configurações (e-mail, telefone, endereço e senha).  | MÉDIA |
+|RF-009| Redirecionar o usuário ao suporte via WhatsApp através de botão direto na tela.  | MÉDIA |
 
 ### Requisitos não funcionais
 
@@ -60,6 +65,11 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 |RNF-002| O sistema deve ser responsivo |  MÉDIA | 
 |RNF-003| O sistema deve garantir a Segurança de dados dos usuários |  ALTA | 
 |RNF-004| O sistema deve possuir Escalabilidade para atender a um grande número de usuários | MÉDIA | 
+|RNF-005| O sistema deve estar disponível 24 horas por dia, 7 dias por semana (alta disponibilidade)  |  MÉDIA | 
+|RNF-006| A aplicação deve consumir baixo volume de dados para otimizar o uso em redes móveis |  MÉDIA | 
+|RNF-007| O sistema deve estar em conformidade com a LGPD (Lei Geral de Proteção de Dados) |  MÉDIA | 
+|RNF-008| A interface deve utilizar cores e ícones que reforcem o conceito de sustentabilidade |  MÉDIA | 
+
 
 
 ## Restrições
