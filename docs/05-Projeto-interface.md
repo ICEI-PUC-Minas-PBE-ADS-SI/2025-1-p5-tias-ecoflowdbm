@@ -63,3 +63,7 @@ Ao acessar a tela de suporte, o usuário poderá entrar em contato direto com a 
 
 ![Descrição da imagem](images/suporte.png)
 
+### Telas do processo 5- Emissão de relatório
+A tela de Emissão de Relatório permite à DBM acessar informações gerenciais sobre o funcionamento do sistema. Nela, é possível visualizar a quantidade de coletas realizadas em determinado período.
+
+![Descrição da imagem](images/Relatorio.png)
