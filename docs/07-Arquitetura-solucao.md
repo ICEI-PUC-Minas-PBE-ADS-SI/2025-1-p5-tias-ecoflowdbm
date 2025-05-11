@@ -47,7 +47,7 @@ O Esquema Relacional corresponde à representação dos dados em tabelas juntame
 
 
 
-![Script Banco de dados](images/script.png)
+![Script Banco de dados](images/scriptsbd.png)
 
 
 
