@@ -6,6 +6,82 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ![Arquitetura da Solução](images/arquitetura.png)
 
+A solução será desenvolvida como uma aplicação web, acessível por navegadores e dispositivos móveis. Seu desenvolvimento seguirá uma arquitetura em camadas, garantindo organização, manutenção e escalabilidade do sistema. O banco de dados utilizado será o MySQL, um sistema gerenciador relacional robusto e amplamente adotado.
+
+
+---
+
+### 🔹 1. Camada de Apresentação (Frontend / Aplicativo Web Responsivo)
+
+Responsável pela interação com o usuário e exibição das interfaces do sistema.
+
+- **Telas:** Login, Cadastro, Recuperação de Senha, Dashboard, Cadastro de Coleta, Histórico de Coleta, Acompanhar Coleta, Recompensas, Suporte, Configurações, Relatórios.
+- **Framework sugerido:** React.js
+
+**Funcionalidades:**
+- Envio de dados para a API (coletas, saques, atualizações).
+- Redirecionamento para suporte via WhatsApp.
+- Exibição de informações, histórico, recompensas e relatórios gerenciais.
+
+---
+
+### 🔹 2. Camada de Aplicação (Backend / API REST)
+
+Responsável pelas regras de negócio, validações e comunicação entre frontend e banco de dados.
+
+- **Linguagem sugerida:** Node.js
+
+**Funcionalidades:**
+- Autenticação, segurança e controle de acesso.
+- Gerenciamento de coletas, recompensas, saques e perfis.
+- Validações lógicas (ex: data de coleta futura, chave Pix obrigatória).
+- Envio de e-mails para recuperação de senha.
+- Integração com serviços externos (ex: sistema de pagamentos via Pix).
+- **Geração de relatórios personalizados pela DBM**, como:
+  - Quantidade de coletas realizadas por período.
+  - Dados estatísticos exportáveis (CSV).
+
+---
+
+### 🔹 3. Camada de Persistência (Banco de Dados Relacional)
+
+Responsável por armazenar os dados da aplicação de forma segura e estruturada.
+
+- **SGBD definido:** MySQL
+
+**Modelagem baseada em:**
+- **Modelo Conceitual:** Notação de Peter Chen
+- **Modelo Lógico:** Notação Pé de Galinha
+- **Script SQL:** Criação de tabelas e restrições
+
+**Entidades principais:**
+- Usuário
+- Coleta
+- Recompensa
+- SaquePix
+
+**Regras de integridade:** unicidade, integridade referencial, obrigatoriedade, domínios de valores.
+
+---
+
+### 🔹 4. Serviços Externos
+
+Serviços conectados à aplicação para ampliar funcionalidades e eficiência.
+
+- **WhatsApp API:** Canal de atendimento direto para suporte ao usuário.
+- **Pix API (opcional):** Transferência direta de recompensas acumuladas.
+- **GitHub Projects:** Ferramenta de gestão de projeto com quadros Kanban e metodologia Scrum.
+
+---
+
+### 🔹 5. Segurança
+
+Mecanismos para garantir a proteção dos dados e das comunicações.
+
+- Criptografia de senhas
+- Conexão segura com HTTPS
+
+
 ## Diagrama de classes
 
 <p align="center">
