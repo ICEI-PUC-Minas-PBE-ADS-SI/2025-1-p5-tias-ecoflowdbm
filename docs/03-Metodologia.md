@@ -58,7 +58,7 @@ Atualizado em: 16/03/2025
 | Henrique Borelli Irenti de Melo        | Introdução | 06/03/2025     | 16/03/2025 | ✔️    | 09/03/2025      |
 | Lucas da Silva Souza        | Objetivos    | 07/03/2025     | 16/03/2025 | ✔️    |          10/03/2025       |
 | Robson Rodrigues de Oliveira       | Histórias de usuário  | 08/03/2025    | 16/03/2025 | ✔️     |     08/03/2025            |
-| Arthur Gomes Murta        | Especificação do projeto  |    09/03/2025       | 16/03/2025 | ✔️    |   11/03/2025    |
+| Robson Rodrigues de Oliveira        | Especificação do projeto  |    09/03/2025       | 16/03/2025 | ✔️    |   11/03/2025    |
 | Pedro Henrique Ribeiro       | Requisitos  |    07/03/2025        | 16/03/2025 | ✔️    |    07/03/2025   |
 | Robson Rodrigues de Oliveira       | Reunião com parceiro  |    05/03/2025        | 16/03/2025 | ✔️    |    05/03/2025   |
 | Lucas da Silva Souza        | Slides    | 16/03/2025     | 16/03/2025 | ✔️    |          16/03/2025       |
