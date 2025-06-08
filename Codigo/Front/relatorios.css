@@ -1,0 +1,102 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Fundo da página */
+body {
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+/* Estilo do cabeçalho */
+.header {
+  background-color: #00a86b;
+  color: white;
+  padding: 20px;
+  text-align: center; /* Centraliza o texto no cabeçalho */
+}
+
+/* Título do cabeçalho */
+.header h1 {
+  font-size: 28px;
+}
+
+/* Container principal */
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Título do container */
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo da tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* Cabeçalho da tabela */
+table thead {
+  background-color: #00a86b;
+  color: white;
+}
+
+/* Células da tabela */
+table th, table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Linhas alternadas */
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Botões de relatório */
+.botao-relatorio {
+  width: 100%;
+  background-color: #00a86b;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Efeito hover nos botões */
+.botao-relatorio:hover {
+  background-color: #007f50;
+}
+
+/* Botão Voltar */
+.voltar {
+  width: 100%;
+  background-color: #ccc;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Efeito hover no botão voltar */
+.voltar:hover {
+  background-color: #aaa;
+}
+
+

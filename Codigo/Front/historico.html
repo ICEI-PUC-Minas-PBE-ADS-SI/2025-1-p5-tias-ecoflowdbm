@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoFlow DBM - Histórico de Coleta</title>
+  <link rel="stylesheet" href="historico.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1>EcoFlow DBM</h1>
+  </header>
+
+  <main class="container">
+    <h2>Histórico de Coletas</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Cliente</th>
+          <th>Endereço</th>
+          <th>Quantidade</th>
+          <th>Data</th>
+        </tr>
+      </thead>
+      <tbody id="historico-tbody">
+        <!-- Linhas dinâmicas aqui -->
+      </tbody>
+    </table>
+
+    <button class="voltar" onclick="window.location.href='home.html'">Voltar para a Tela Inicial</button>
+  </main>
+
+  <script>
+    function carregarHistorico() {
+      // Pega todas as coletas do localStorage
+      const coletas = JSON.parse(localStorage.getItem('coletas')) || [];
+      
+      // Filtra só as coletas concluídas (status "concluído")
+      const concluidas = coletas.filter(c => c.status && c.status.toLowerCase() === 'concluído');
+
+      // Salva as coletas concluídas no localStorage para a tela recompensas
+      localStorage.setItem('historicoColetas', JSON.stringify(concluidas));
+
+      const tbody = document.getElementById('historico-tbody');
+      tbody.innerHTML = '';
+
+      if (concluidas.length === 0) {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td colspan="4" style="text-align:center;">Nenhuma coleta concluída encontrada.</td>`;
+        tbody.appendChild(tr);
+        return;
+      }
+
+      concluidas.forEach(coleta => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>${coleta.cliente}</td>
+          <td>${coleta.endereco}</td>
+          <td>${coleta.quantidade}</td>
+          <td>${coleta.data}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    carregarHistorico();
+  </script>
+
+</body>
+</html>
+

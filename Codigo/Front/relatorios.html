@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoFlow DBM - Relatórios</title>
+  <link rel="stylesheet" href="relatorios.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <h1>EcoFlow DBM</h1>
+  </header>
+
+  <main class="container">
+    <h2>Relatório de Coletas</h2>
+
+    <table id="tabela-relatorio">
+      <thead>
+        <tr>
+          <th>Nome do Cliente</th>
+          <th>Data</th>
+          <th>Quantidade</th>
+          <th>Valor (R$)</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+
+    <button class="botao-relatorio" onclick="gerarPDF()">📥 Baixar Relatório (PDF)</button>
+    <button class="botao-relatorio" onclick="gerarExcel()">📊 Baixar Relatório (Excel)</button>
+    <button class="voltar" onclick="window.location.href='home.html'">Voltar para a Tela Inicial</button>
+  </main>
+
+  <script>
+    const VALOR_POR_GARRAFA = 0.85;
+
+    function carregarRelatorio() {
+      const coletas = JSON.parse(localStorage.getItem('historicoColetas')) || [];
+
+      const tbody = document.querySelector('#tabela-relatorio tbody');
+      tbody.innerHTML = '';
+
+      if (coletas.length === 0) {
+        const tr = document.createElement('tr');
+        tr.innerHTML = '<td colspan="4" style="text-align:center;">Nenhuma coleta concluída encontrada.</td>';
+        tbody.appendChild(tr);
+        return;
+      }
+
+      coletas.forEach(coleta => {
+        const valor = (Number(coleta.quantidade) * VALOR_POR_GARRAFA).toFixed(2);
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>${coleta.cliente}</td>
+          <td>${coleta.data}</td>
+          <td>${coleta.quantidade}</td>
+          <td>${valor.replace('.', ',')}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function gerarPDF() {
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF();
+
+      doc.text("Relatório de Coletas - EcoFlow DBM", 14, 15);
+
+      doc.autoTable({
+        html: '#tabela-relatorio',
+        startY: 20,
+        headStyles: { fillColor: [0, 168, 107] },
+      });
+
+      doc.save('relatorio-coletas.pdf');
+    }
+
+    function gerarExcel() {
+      const tabela = document.querySelector('#tabela-relatorio');
+      const htmlTabela = tabela.outerHTML.replace(/ /g, '%20');
+      const nomeArquivo = 'relatorio-coletas.xls';
+      const dataTipo = 'application/vnd.ms-excel';
+      const link = document.createElement('a');
+      link.href = 'data:' + dataTipo + ', ' + htmlTabela;
+      link.download = nomeArquivo;
+      link.click();
+    }
+
+    carregarRelatorio();
+  </script>
+
+</body>
+</html>

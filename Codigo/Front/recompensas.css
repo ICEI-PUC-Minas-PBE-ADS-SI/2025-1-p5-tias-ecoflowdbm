@@ -1,0 +1,98 @@
+/* Reset básico para remover margens e paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Fundo da página */
+body {
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+/* Estilo do cabeçalho */
+.header {
+  background-color: #00a86b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 28px;
+}
+
+/* Container principal */
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Visor do saldo */
+.saldo {
+  font-size: 18px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Labels do formulário */
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Campos de entrada */
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+form input:focus {
+  border-color: #00a86b;
+  outline: none;
+}
+
+/* Botões gerais */
+button {
+  width: 100%;
+  background-color: #00a86b;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #007f50;
+}
+
+/* Botão Voltar */
+.voltar {
+  background-color: #ccc;
+  color: black;
+  margin-top: 15px;
+}
+
+.voltar:hover {
+  background-color: #aaa;
+}
