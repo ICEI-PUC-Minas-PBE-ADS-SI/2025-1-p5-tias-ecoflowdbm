@@ -45,6 +45,13 @@ Para garantir uma melhor organização, produtividade e colaboração entre os m
 - Pesquisa: Robson Rodrigues de Oliveira e Pedro Henrique Ribeiro
 - Documentação: Henrique Borelli Irenti de Melo, Lucas da Silva Souza,Robson Rodrigues de Oliveira e Arthur Gomes Murta
 
+
+#### Sprint 4
+- Scrum master_: Pedro Henrique Ribeiro
+- Front: Robson Rodrigues , Pedro Henrique , Henrique Borelli, Arthur Gomes Murta,Lucas da Silva
+- Back: Robson Rodrigues , Pedro Henrique , Henrique Borelli, Arthur Gomes Murta,Lucas da Silva
+- Banco de dados: Robson Rodrigues , Pedro Henrique , Henrique Borelli, Arthur Gomes Murta,Lucas da Silva
+
 ###  Quadro de tarefas
 
 > Apresente a divisão de tarefas entre os membros do grupo e o acompanhamento da execução, conforme o exemplo abaixo.
@@ -93,6 +100,18 @@ Atualizado em: 11/05/2025
 | Robson Rodrigues de Oliveira     | Elementos conceituais do banco mapeados num SGBD |  11/05/2025     | 11/05/2025  | ✔️     |  11/05/2025                |
 | Robson Rodrigues de Oliveira       | Scripts SQL para criação do Banco de Dados |  11/05/2025     | 11/05/2025  | ✔️     |  11/05/2025                |
 | Todos Integrantes do Projeto      | Preparação da Apresentação |  17/03/2025     | 11/05/2025  | ✔️     |  11/05/2025               |
+
+#### Sprint 4
+
+Atualizado em: 08/06/2025
+
+| Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
+| :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
+| Lucas da silva e Robson Rodrigues   |Front End | 12/05/2025    | 08/06/2025     | ✔️      |   08/06/2025              |
+| Lucas da silva e Robson Rodrigues      | Back End | 12/05/2025    | 08/06/2025     | ✔️      |   08/06/2025              |
+| Lucas da silva e Robson Rodrigues      |  Banco de dados | 12/05/2025    | 08/06/2025     | ✔️      |   08/06/2025              |
+| Todos Integrantes do Projeto      | Preparação da Apresentação | 12/05/2025    | 08/06/2025     | ✔️      |   08/06/2025              |
+
 
 Legenda:
 - ✔️: terminado
