@@ -29,7 +29,7 @@ Diante desse cenário, torna-se necessário o desenvolvimento de uma solução q
 <p align="justify">
 Desenvolver um software de gestão sustentável para a Distribuidora de Bebidas Mendes (DBM), que solucione o problema do descarte inadequado de vasilhames retornáveis e promova a reciclagem e reutilização desses materiais.</p>
 
-**Objetivos Específicos**
+**Já os Objetivos Específicos são:**
 
 * **Facilitar a coleta de vasilhames**: Criar um sistema que permita aos consumidores agendar a coleta de vasilhames retornáveis em suas residências, utilizando a Fiorino da empresa para rotas semanais.
 
