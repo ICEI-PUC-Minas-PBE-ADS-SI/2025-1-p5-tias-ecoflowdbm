@@ -1,42 +1,48 @@
-### 3.3.1 Processo 1 – NOME DO PROCESSO
+### 3.3.1 Processo 1 – Gestão de Estoque
 
-_Apresente aqui o nome e as oportunidades de melhoria para o processo 1. 
-Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN._
+### 1. Gestão de Estoque (AS IS)
+**Processo Atual:**
+- **Contagem Manual:**
+  - Funcionários realizam contagens físicas periódicas (ex.: semanalmente) usando planilhas impressas ou Excel locais
+  - Dados não são compartilhados entre estabelecimentos (ex.: farmácia não sabe o estoque do supermercado parceiro)
+
+- **Reposição:**
+  - Pedidos são feitos apenas quando o estoque está crítico, via telefone ou e-mail para fornecedores
+  - Não há histórico de reposições nem previsão de demanda
+
+- **Problemas Críticos:**
+  - Erros frequentes na contagem
+  - Excesso ou falta de garrafas devido à falta de sincronização
  
 ![image](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-ecoflowdbm/blob/main/docs/images/AsIs_Reposi%C3%A7%C3%A3oEstoque.png)<br>
 Figura 1: Gestão de Estoque
+
+
+
+### 3.3.1.1 Processo 1 – Gestão de Pedidos e Devolução
+
+### 2. Gestão de Pedidos e Devolução (AS IS)
+**Processo Atual:**
+- **Registro de Devoluções:**
+  - Clientes entregam garrafas no balcão, mas não recebem comprovante digital
+  - Estabelecimentos anotam em livros de registro sem padrão definido
+
+- **Processamento de Pedidos:**
+  - Pedidos de novas garrafas são feitos por WhatsApp, sem confirmação formal
+  - Não há rastreamento do status (ex.: "em transporte", "entregue")
+
+- **Problemas Críticos:**
+  - Disputas por devoluções não registradas
+  - Atrasos na reposição devido à comunicação informal
 
 ![image](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-ecoflowdbm/blob/main/docs/images/AsIs_Pedidos.png)<br>
 Figura 2: Gestão de Pedidos e Devolução
 
 
 
+### Quadro Resumo AS IS
 
-**Nome da atividade 1**
-
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-| ***Exemplo:***  |                  |                |                   |
-| login           | Caixa de Texto   | formato de e-mail |                |
-| senha           | Caixa de Texto   | mínimo de 8 caracteres |           |
-
-| **Comandos**         |  **Destino**                   | **Tipo** |
-| ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                   |
-| entrar               | Fim do Processo 1              | default           |
-| cadastrar            | Início do proceso de cadastro  |                   |
-
-
-**Nome da atividade 2**
-
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-|                 |                  |                |                   |
-
-| **Comandos**         |  **Destino**                   | **Tipo**          |
-| ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
+| Atividade               | Como Funciona Hoje?                  | Problemas                          |
+|-------------------------|--------------------------------------|------------------------------------|
+| **Gestão de Estoque**   | Planilhas locais e contagem manual   | Erros humanos, falta de visibilidade |
+| **Pedidos/Devolução**   | Registro físico e comunicação informal | Sem comprovantes, lentidão        |
