@@ -14,9 +14,9 @@
 
 ## Modelagem dos processos
 
-[PROCESSO 1 - Gestão de Estoque](./processes/processo-1-nome-do-processo.md "Detalhamento do processo 1.")
+[PROCESSO 1 - Gestão de Estoque / Gestão de pedidos e devolução AS/IS](./processes/processo-1-nome-do-processo.md "Detalhamento do processo 1.")
 
-[PROCESSO 2 - Gestão de pedidos e devolução](./processes/processo-2-nome-do-processo.md "Detalhamento do processo 2.")
+[PROCESSO 2 - Gestão de Estoque / Gestão de pedidos e devolução TO BE](./processes/processo-2-nome-do-processo.md "Detalhamento do processo 2.")
 
 
 ## Indicadores de desempenho
