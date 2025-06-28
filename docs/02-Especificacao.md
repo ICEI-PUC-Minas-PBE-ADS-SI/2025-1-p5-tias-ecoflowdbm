@@ -45,30 +45,45 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 
 ### Requisitos funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre  consumidores e colaboradores | ALTA | 
-|RF-002| Implementar sistema de pontuação e recompensas para quem devolver vasilhames   | ALTA |
-|RF-003| Permitir que o usuário agende a coleta de vasilhames a serem descartados  | ALTA |
-|RF-004| Receber os endereços para coleta  | ALTA |
-|RF-005| Permitir que o usuário visualize o histórico de coletas realizadas| MÉDIA |
-|RF-006| Permitir que o usuário acompanhe o status de coleta  | MÉDIA |
-|RF-007| Permitir que o usuário realize saques via Pix das recompensas acumuladas  | ALTA |
-|RF-008| Permitir alteração de dados cadastrais na tela de configurações (e-mail, telefone, endereço e senha).  | MÉDIA |
-|RF-009| Redirecionar o usuário ao suporte via WhatsApp através de botão direto na tela.  | MÉDIA |
+
+| ID     | Descrição do Requisito                                                                 | Prioridade |
+|--------|------------------------------------------------------------------------------------------|------------|
+| RF-001 | Permitir que o usuário cadastre consumidores e colaboradores                            | ALTA       |
+| RF-002 | Implementar sistema de recompensas para quem devolver vasilhames                        | ALTA       |
+| RF-003 | Permitir que o usuário agende a coleta de vasilhames a serem descartados               | ALTA       |
+| RF-004 | Receber os endereços para coleta                                                        | ALTA       |
+| RF-005 | Permitir que o usuário visualize o histórico de coletas realizadas                      | MÉDIA      |
+| RF-006 | Permitir que o usuário acompanhe o status de coleta                                     | MÉDIA      |
+| RF-007 | Permitir que o usuário realize saques via Pix das recompensas acumuladas               | ALTA       |
+| RF-008 | Permitir alteração de dados cadastrais na tela de configurações                         | MÉDIA      |
+| RF-009 | Redirecionar o usuário ao suporte via WhatsApp através de botão direto na tela         | MÉDIA      |
+| RF-010 | Permitir que o administrador aprove ou conclua uma coleta cadastrada                    | ALTA       |
+| RF-011 | Exibir automaticamente as coletas aprovadas no Histórico               | ALTA       |
+| RF-012 | Atualizar o saldo do usuário automaticamente após a conclusão de uma coleta             | ALTA       |
+| RF-013 | Exibir coletas pendentes separadamente das coletas já aprovadas                         | ALTA       |
+| RF-014 | Permitir que o usuário exclua ou edite coletas antes da aprovação                       | MÉDIA      |
+| RF-015 | Exibir relatórios com os dados consolidados de todas as coletas aprovadas para o administrador               | MÉDIA      |
+| RF-016 | Exibir saldo acumulado de recompensas e permitir resgate com preenchimento de dados     | ALTA       |
+
+
 
 ### Requisitos não funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve possuir Interface intuitiva e de fácil usabilidade | MÉDIA | 
-|RNF-002| O sistema deve ser responsivo |  MÉDIA | 
-|RNF-003| O sistema deve garantir a Segurança de dados dos usuários |  ALTA | 
-|RNF-004| O sistema deve possuir Escalabilidade para atender a um grande número de usuários | MÉDIA | 
-|RNF-005| O sistema deve estar disponível 24 horas por dia, 7 dias por semana (alta disponibilidade)  |  MÉDIA | 
-|RNF-006| A aplicação deve consumir baixo volume de dados para otimizar o uso em redes móveis |  MÉDIA | 
-|RNF-007| O sistema deve estar em conformidade com a LGPD (Lei Geral de Proteção de Dados) |  MÉDIA | 
-|RNF-008| A interface deve utilizar cores e ícones que reforcem o conceito de sustentabilidade |  MÉDIA | 
+| ID      | Descrição do Requisito                                                                                  | Prioridade |
+|---------|----------------------------------------------------------------------------------------------------------|------------|
+|RNF-001| A interface deve utilizar cores e ícones que reforcem o conceito de sustentabilidade |  MÉDIA | 
+| RNF-002 | A interface deve ser intuitiva, com ícones representativos e linguagem acessível                         | ALTA       |
+| RNF-003 | O sistema deve garantir a integridade dos dados através de validações em backend e frontend              | ALTA       |
+| RNF-004 | As requisições entre frontend e backend devem ocorrer por meio de APIs REST com formato JSON             | ALTA       |
+| RNF-005 | O sistema deve utilizar autenticação segura via JWT                                                      | ALTA       |
+| RNF-006| O sistema deve estar em conformidade com a LGPD (Lei Geral de Proteção de Dados) |  MÉDIA | 
+| RNF-007 | O banco de dados deve estar hospedado em ambiente seguro e acessível apenas via backend autorizado       | ALTA       |
+| RNF-008 | As informações dos usuários devem estar protegidas contra acessos não autorizados                        | ALTA       |
+| RNF-009 | A aplicação deve estar disponível online por meio de link direto, com acesso via navegador               | ALTA       |
+| RNF-010 | A aplicação deve permitir fácil manutenção e escalabilidade futura                                        | MÉDIA      |
+| RNF-011 | A aplicação deve registrar logs de erros e falhas no backend                                              | MÉDIA      |
+
+
 
 
 
@@ -83,11 +98,11 @@ O projeto está restrito aos itens apresentados na tabela a seguir.
 |003| Necessidade de treinamento dos colaboradores para uso do sistema       |
 
 ## Diagrama de casos de uso
+<p align="justify">
+O diagrama de casos de uso da aplicação EcoFlow DBM representa as principais interações entre os usuários do sistema (consumidores, colaboradores e administradores) e as funcionalidades oferecidas pela plataforma. Através do diagrama, é possível visualizar de forma clara e objetiva os serviços disponibilizados, como o cadastro de usuários, agendamento de coletas, acompanhamento do status das coletas, visualização de histórico, resgate de recompensas via Pix, além da gestão administrativa de coletas e acesso aos relatórios consolidados. Esse modelo facilita o entendimento dos requisitos funcionais, permitindo identificar as responsabilidades de cada ator e garantindo uma visão geral da estrutura do sistema.
 
 <p align="center">
   <img src="images/DiagramaCasoDeUso.png" alt="Diagrama Caso de Uso">
 </p>
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos. Ele utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. O diagrama contempla a fronteira do sistema e o detalhamento dos requisitos funcionais, com a indicação dos atores, casos de uso e seus relacionamentos.
 
-As referências abaixo irão auxiliá-lo na geração do artefato “diagrama de casos de uso”.
