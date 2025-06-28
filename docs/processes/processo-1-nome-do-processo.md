@@ -19,8 +19,6 @@ Figura 1: Gestão de Estoque
 
 
 
-### 3.3.1.1 Processo 1 – Gestão de Pedidos e Devolução
-
 ### 2. Gestão de Pedidos e Devolução (AS IS)
 **Processo Atual:**
 - **Registro de Devoluções:**
