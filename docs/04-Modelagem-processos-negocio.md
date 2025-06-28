@@ -5,31 +5,18 @@
 
 <p align="justify">Atualmente, o processo de gestão de coleta e retorno de garrafas é realizado de forma manual e descentralizada. A separação e o controle das garrafas retornáveis dependem da atuação direta dos usuários e dos estabelecimentos, sem um sistema automatizado que acompanhe o fluxo das garrafas ou registre suas movimentações. A comunicação entre os envolvidos ocorre por meios informais, o que dificulta o monitoramento em tempo real, gera riscos de falhas no controle logístico e torna o processo menos eficiente e escalável. Além disso, não há uma estrutura de monetização clara que garanta a sustentabilidade do projeto, nem um sistema que incentive a participação contínua dos usuários.
   
-Os diagramas BPMN abaixo ilustram os principais fluxos atuais:
-
-![image](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-ecoflowdbm/blob/main/docs/images/AsIs_Reposi%C3%A7%C3%A3oEstoque.png)<br>
-Figura 1: Gestão de Estoque
-
-![image](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-ecoflowdbm/blob/main/docs/images/AsIs_Pedidos.png)<br>
-Figura 2: Gestão de Pedidos e Devolução
 
 ## Descrição geral da proposta (Modelagem TO BE)
 
 <p align="justify">Com a implementação da plataforma web, o processo será automatizado e centralizado, proporcionando maior controle, rastreabilidade e eficiência. Os usuários poderão registrar a devolução das garrafas diretamente na plataforma, que calculará automaticamente os valores a serem recebidos e aplicará o percentual de monetização do projeto. A comunicação com os estabelecimentos será feita de forma padronizada, via sistema, e os dados serão armazenados de forma segura e acessível para análises futuras.
 
-Os diagramas BPMN abaixo ilustram os principais fluxos atuais:
 
-![image](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-ecoflowdbm/blob/main/docs/images/ToBe_Reposi%C3%A7%C3%A3oEstoque.png)<br>
-Figura 3: Gestão de Estoque
-
-![image](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-ecoflowdbm/blob/main/docs/images/ToBe_PedidosDevolu%C3%A7%C3%A3o.png)<br>
-Figura 4: Gestão de Pedidos e Devolução
 
 ## Modelagem dos processos
 
-[PROCESSO 1 - Nome do processo](./processes/processo-1-nome-do-processo.md "Detalhamento do processo 1.")
+[PROCESSO 1 - Gestão de Estoque](./processes/processo-1-nome-do-processo.md "Detalhamento do processo 1.")
 
-[PROCESSO 2 - Nome do processo](./processes/processo-2-nome-do-processo.md "Detalhamento do processo 2.")
+[PROCESSO 2 - Gestão de pedidos e devolução](./processes/processo-2-nome-do-processo.md "Detalhamento do processo 2.")
 
 
 ## Indicadores de desempenho
