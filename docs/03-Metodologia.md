@@ -2,8 +2,9 @@
 # Metodologia
 
 <span style="color:red">Pré-requisitos: <a href="02-Especificacao.md"> Especificação do projeto</a></span>
+<p align="justify">
+A metodologia adotada para o desenvolvimento da aplicação EcoFlow DBM foi baseada em uma abordagem ágil e colaborativa, com foco na divisão de tarefas, testes contínuos e entregas incrementais. A equipe utilizou o GitHub como ambiente principal para versionamento e controle do código-fonte, garantindo rastreabilidade e colaboração eficiente entre os membros. O projeto foi desenvolvido localmente com uso de Visual Studio Code, Node.js para o backend e arquivos HTML/CSS/JavaScript para o frontend, mantendo a integração com banco de dados MySQL. A organização das atividades foi feita por meio de quadros no Projects do proprio GitHub Project, permitindo o acompanhamento do progresso de cada funcionalidade, priorização de demandas e cumprimento dos prazos estabelecidos. Essa estrutura de trabalho proporcionou flexibilidade, comunicação constante e alinhamento entre os membros da equipe durante todas as fases do projeto.
 
-Descreva aqui a metodologia de trabalho do grupo para abordar o problema. Inclua definições sobre os ambientes de trabalho utilizados pela equipe para desenvolver o projeto. Isso abrange a relação dos ambientes utilizados, a estrutura para a gestão do código-fonte, além da definição do processo e das ferramentas por meio dos quais a equipe se organiza (gestão de equipes).
 
 
 ## Controle de versão
@@ -51,6 +52,11 @@ Para garantir uma melhor organização, produtividade e colaboração entre os m
 - Front: Robson Rodrigues , Pedro Henrique , Henrique Borelli, Arthur Gomes Murta,Lucas da Silva
 - Back: Robson Rodrigues , Pedro Henrique , Henrique Borelli, Arthur Gomes Murta,Lucas da Silva
 - Banco de dados: Robson Rodrigues , Pedro Henrique , Henrique Borelli, Arthur Gomes Murta,Lucas da Silva
+
+  ### Sprint 5  
+**Scrum Master**: Robson Rodrigues  
+**Equipe**: Robson Rodrigues, Lucas da Silva 
+**Atuação**: Front-end, Back-end, Banco de Dados, Hospedagem, Documentação  
 
 ###  Quadro de tarefas
 
@@ -112,6 +118,20 @@ Atualizado em: 08/06/2025
 | Lucas da silva e Robson Rodrigues      |  Banco de dados | 12/05/2025    | 08/06/2025     | ✔️      |   08/06/2025              |
 | Todos Integrantes do Projeto      | Preparação da Apresentação | 12/05/2025    | 08/06/2025     | ✔️      |   08/06/2025              |
 
+#### Sprint 5
+
+Atualizado em: 29/06/2025
+
+| Responsável                          | Tarefa/Requisito         | Iniciado em | Prazo      | Status | Terminado em |
+| :----------------------------------- | :----------------------- | :---------: | :--------: | :----: | :----------: |
+| Lucas da Silva, Robson Rodrigues     | Front-end                | 10/06/2025  | 29/06/2025 | ✔️     | 29/06/2025   |
+| Lucas da Silva, Robson Rodrigues      | Back-end                 | 10/06/2025  | 29/06/2025 | ✔️     | 29/06/2025   |
+| Lucas da Silva, Robson Rodrigues      | Banco de Dados           | 10/06/2025  | 29/06/2025 | ✔️     | 29/06/2025   |
+| Lucas da Silva, Robson Rodrigues      | Hospedagem               | 10/06/2025  | 29/06/2025 | ✔️     | 29/06/2025   |
+| Lucas da Silva, Robson Rodrigues      | Documentação             | 10/06/2025  | 29/06/2025 | ✔️     | 29/06/2025   |
+
+
+
 
 Legenda:
 - ✔️: terminado
@@ -147,7 +167,7 @@ Exemplo: os artefatos do projeto são desenvolvidos a partir de diversas platafo
 |-------------------------------------|------------------------------------|----------------------------------------|
 | Repositório de código fonte         | GitHub                             | [http://.... ](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-ecoflowdbm)                           |
 | Documentos do projeto               | GitHub                             | [http://....](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-ecoflowdbm)                            |
-| Projeto de interface                | Figma                              | [http://.... ](https://www.figma.com/design/Mqi1j2yFVllhyIWU0P76ib/APP-EcoFlow-DBM?node-id=0-1&t=iQIJ1asjwoQMlIsn-1)                           |
+| Projeto de interface                | Figma                              | [http://.... ]([https://www.figma.com/design/Mqi1j2yFVllhyIWU0P76ib/APP-EcoFlow-DBM?node-id=0-1&t=iQIJ1asjwoQMlIsn-1](https://www.figma.com/design/Mqi1j2yFVllhyIWU0P76ib/APP-EcoFlow-DBM?node-id=0-1&t=B3r0TRmAznOgqvRH-1))                           |
 | Gerenciamento do projeto            | GitHub Projects                    | [http://....](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-ecoflowdbm)                            |
 | Hospedagem                          | A definir                           | http://....                            |
  
