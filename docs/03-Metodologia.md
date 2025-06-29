@@ -54,13 +54,13 @@ Para garantir uma melhor organização, produtividade e colaboração entre os m
 - Banco de dados: Robson Rodrigues , Pedro Henrique , Henrique Borelli, Arthur Gomes Murta,Lucas da Silva
 
   ### Sprint 5  
-**Scrum Master**: Robson Rodrigues  
-**Equipe**: Robson Rodrigues, Lucas da Silva 
-**Atuação**: Front-end, Back-end, Banco de Dados, Hospedagem, Documentação  
+crum Master: Robson Rodrigues  
+Equipe: Robson Rodrigues, Lucas da Silva 
+Atuação: Front-end, Back-end, Banco de Dados, Hospedagem, Documentação  
 
 ###  Quadro de tarefas
 
-> Apresente a divisão de tarefas entre os membros do grupo e o acompanhamento da execução, conforme o exemplo abaixo.
+![|Projects](images/Projects.png)
 
 #### Sprint 1
 
