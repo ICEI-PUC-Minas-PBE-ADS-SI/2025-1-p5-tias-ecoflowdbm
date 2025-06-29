@@ -1,17 +1,16 @@
 # Arquitetura da solução
 
-<span style="color:red">Pré-requisitos: <a href="05-Projeto-interface.md"> Projeto de interface</a></span>
+<p align="justify">
+A aplicação EcoFlow DBM foi desenvolvida com base em uma arquitetura moderna e eficiente, integrando tecnologias amplamente utilizadas no desenvolvimento web. O frontend da aplicação é construído utilizando HTML, CSS e JavaScript, garantindo uma interface amigável, responsiva e acessível aos usuários. Esses arquivos são executados diretamente no navegador do usuário, com apoio do armazenamento local para facilitar a experiência de uso e reter dados temporários como status de coleta, preferências e dados de login. O backend da aplicação é desenvolvido com Node.js, responsável por gerenciar as regras de negócio, autenticação, processamento de requisições e comunicação com o banco de dados. O sistema utiliza o MySQL Workbench para armazenar de forma segura e organizada os dados dos usuários, coletas, recompensas e transações, permitindo consultas otimizadas e integridade das informações.
+</p>
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
-
-![Arquitetura da Solução](images/arquitetura.png)
-
-A solução será desenvolvida como uma aplicação web, acessível por navegadores e dispositivos móveis. Seu desenvolvimento seguirá uma arquitetura em camadas, garantindo organização, manutenção e escalabilidade do sistema. O banco de dados utilizado será o MySQL, um sistema gerenciador relacional robusto e amplamente adotado.
-
+<p align="justify">
+Para garantir a disponibilidade da plataforma, a hospedagem é realizada na Azure, que oferece escalabilidade, segurança e estabilidade para o funcionamento da aplicação em ambiente de produção. A comunicação entre o frontend e o backend ocorre via API REST, permitindo uma separação clara de responsabilidades e facilitando futuras integrações com novos módulos ou serviços. Toda a estrutura foi planejada para manter uma boa performance, mesmo com o aumento da base de usuários, permitindo que a EcoFlow DBM atenda de maneira sustentável a demanda de coleta de vasilhames e gerenciamento de recompensas em tempo real, promovendo o engajamento ecológico por meio da tecnologia.
+</p>
 
 ---
 
-### 🔹 1. Camada de Apresentação (Frontend / Aplicativo Web Responsivo)
+###  1. Camada de Apresentação (Frontend / Aplicativo Web Responsivo)
 
 Responsável pela interação com o usuário e exibição das interfaces do sistema.
 
@@ -25,7 +24,7 @@ Responsável pela interação com o usuário e exibição das interfaces do sist
 
 ---
 
-### 🔹 2. Camada de Aplicação (Backend / API REST)
+###  2. Camada de Aplicação (Backend / API REST)
 
 Responsável pelas regras de negócio, validações e comunicação entre frontend e banco de dados.
 
@@ -43,7 +42,7 @@ Responsável pelas regras de negócio, validações e comunicação entre fronte
 
 ---
 
-### 🔹 3. Camada de Persistência (Banco de Dados Relacional)
+### 3. Camada de Persistência (Banco de Dados Relacional)
 
 Responsável por armazenar os dados da aplicação de forma segura e estruturada.
 
@@ -64,7 +63,7 @@ Responsável por armazenar os dados da aplicação de forma segura e estruturada
 
 ---
 
-### 🔹 4. Serviços Externos
+###  4. Serviços Externos
 
 Serviços conectados à aplicação para ampliar funcionalidades e eficiência.
 
@@ -74,7 +73,7 @@ Serviços conectados à aplicação para ampliar funcionalidades e eficiência.
 
 ---
 
-### 🔹 5. Segurança
+###  5. Segurança
 
 Mecanismos para garantir a proteção dos dados e das comunicações.
 
@@ -83,6 +82,8 @@ Mecanismos para garantir a proteção dos dados e das comunicações.
 
 
 ## Diagrama de classes
+<p align="justify">
+Diagrama que representa a estrutura estática do sistema, mostrando classes, atributos, métodos e relacionamentos para gestão de garrafas retornáveis, pontos e estabelecimentos comerciais.
 
 <p align="center">
   <img src="images/DiagramaDeClasses.jpg" alt="Diagrama De Classes">
@@ -91,11 +92,11 @@ Mecanismos para garantir a proteção dos dados e das comunicações.
 
 
 ##  Modelo de dados
-
+<p align="justify">
 O desenvolvimento da solução proposta para a DBM (Distribuidora de Bebidas e Meio Ambiente) requer a criação de uma base de dados estruturada que viabilize o cadastro de usuários, agendamento e acompanhamento de coletas de garrafas retornáveis, gerenciamento de recompensas via Pix, configurações de conta e a geração de relatórios administrativos por parte da distribuidora. Essa base de dados permitirá a organização e controle de todos os processos identificados, garantindo integridade, segurança e rastreabilidade das informações.
 
 Diagrama Entidade-Relacionamento (DER) em notação Peter Chen
-
+<p align="justify">
 Com a utilização da notação Peter Chen, foi elaborado o Diagrama Entidade-Relacionamento (DER) para representar graficamente as entidades envolvidas no projeto EcoFlow DBM, seus respectivos atributos e os relacionamentos existentes entre elas. O modelo contempla todas as funcionalidades previstas no sistema, como o cadastro de usuários, o agendamento de coletas, o controle de recompensas e a solicitação de saques via Pix.
 
 ![Tabela DER](images/TabelaDER.png)
@@ -107,7 +108,7 @@ Com a utilização da notação Peter Chen, foi elaborado o Diagrama Entidade-Re
 
 
 Diagrama Entidade-Relacionamento (DER) em notação Pé de Galinha
-
+<p align="justify">
 O diagrama apresentado representa o modelo de dados do sistema EcoFlow DBM, utilizando a notação Pé de Galinha. Esse modelo contempla as principais funcionalidades da aplicação, como o cadastro de usuários, agendamento de coletas de vasilhames retornáveis, controle de recompensas, saques via Pix, configurações de conta e geração de relatórios por parte da distribuidora.
 
 Cada entidade do sistema é representada com seus respectivos atributos e relacionamentos, garantindo uma visão clara da estrutura lógica do banco de dados. 
@@ -115,36 +116,16 @@ Cada entidade do sistema é representada com seus respectivos atributos e relaci
 ![Tabela DER](images/PeGalinha.png)
 
 ### Modelo físico
-
+<p align="justify">
 O modelo físico do banco de dados representa a implementação prática do modelo lógico, descrevendo em detalhes as estruturas reais que serão criadas no sistema gerenciador de banco de dados (SGBD) utilizado. No caso do projeto EcoFlow DBM, foi utilizado o MySQL para a criação e gerenciamento das tabelas, constraints e relacionamentos.
 
 ![Script Banco de dados](images/scriptsbd.png)
 
 
-## Minimundo
-
-Na jornada sustentável da EcoFlow DBM, a segurança, organização e coerência do sistema são pilares fundamentais. Para garantir que tudo funcione corretamente, algumas regras de negócio foram cuidadosamente definidas desde o início da concepção do sistema.
-
-Tudo começa com o cadastro do usuário. Cada pessoa que se junta à plataforma precisa registrar um e-mail exclusivo, garantindo que não haja duplicidades no sistema. Além disso, para garantir o acesso seguro, o preenchimento da senha é obrigatório — ninguém consegue usar o sistema sem esse dado essencial.
-
-Uma vez logado, o usuário tem acesso à funcionalidade principal: o cadastro de coletas. Ele pode realizar quantos cadastros quiser, pois o sistema permite que um único usuário registre várias coletas ao longo do tempo. No entanto, cada coleta sempre estará vinculada a apenas um usuário, reforçando a identidade individual das ações.
-
-Para que a coleta seja válida, a data disponível precisa obrigatoriamente ser informada. O sistema não aceita coletas sem data definida e também não permite que o usuário cadastre uma data retroativa — afinal, não se pode agendar para o passado. Além disso, é necessário informar a quantidade de garrafas de vidro a serem entregues, e esse número precisa ser inteiro e maior que zero, respeitando o propósito sustentável da iniciativa.
-
-Ao participar, o usuário acumula uma recompensa como reconhecimento por suas ações ambientais. Essa recompensa é representada por um saldo total, exclusivo para cada pessoa. Cada usuário possui apenas uma recompensa associada à sua conta, formando um relacionamento direto e único com essa funcionalidade.
-
-Se desejar, o usuário pode sacar o valor acumulado via Pix. O sistema permite que ele realize diversos saques ao longo do tempo, mas cada saque pertence sempre a um único usuário. Para que o processo seja validado, é imprescindível informar uma chave Pix válida — esse campo é obrigatório para a liberação do pagamento.
-
-Pensando na praticidade, a plataforma também oferece uma área de configurações da conta. Por lá, o usuário pode atualizar seus dados pessoais, como e-mail, telefone, endereço e senha. Esses são os únicos campos permitidos para alteração, mantendo a integridade e o controle das informações.
-
-Além de todos esses recursos, a EcoFlow DBM se preocupa com a experiência do usuário em casos de dúvidas ou dificuldades. Para isso, o sistema disponibiliza um canal de suporte direto via WhatsApp, representado por um ícone na tela de atendimento. Ao clicar no botão, o usuário é automaticamente redirecionado para uma conversa com a equipe de suporte no aplicativo, permitindo um contato ágil, humanizado e eficiente. Essa solução reforça a acessibilidade e o compromisso da plataforma em oferecer ajuda rápida e clara sempre que necessário, sem complicações técnicas.
-
-Por fim, pensando na gestão interna da distribuidora, o sistema oferece à equipe da DBM a possibilidade de filtrar e gerar relatórios de coletas realizadas por período.
-
 ## Tecnologias
-
+<p align="justify">
 Descreva qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
-
+<p align="justify">
 Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 
 
@@ -153,7 +134,7 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 | Front-end      | HTML + CSS + JS  |
 | Back-end       | Node.js         |
 | SGBD           | MySQL           |
-| Deploy         | Vercel      |
+| Deploy         | Azure      |
 
 
 ## Hospedagem
@@ -167,9 +148,9 @@ Explique como a hospedagem e o lançamento da plataforma foram realizados.
 > - [Publicando seu site no Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
 
 ## Qualidade de software
-
+<p align="justify">
 A busca pela qualidade no desenvolvimento de software é essencial para garantir que o produto atenda às necessidades dos usuários finais e mantenha sua eficácia ao longo do tempo. De acordo com a norma ISO/IEC 25010, a qualidade de um software pode ser avaliada com base em um conjunto de características e subcaracterísticas que abrangem desde o desempenho técnico até a experiência do usuário.
-
+<p align="justify">
 No projeto EcoFlow DBM, que visa facilitar a logística reversa de garrafas retornáveis, a adoção de critérios de qualidade é ainda mais importante, pois envolve a confiabilidade dos dados, segurança das informações, usabilidade e a integridade das operações. Tendo em vista a limitação de tempo e recursos, a equipe adotará algumas subcaracterísticas específicas da norma ISO/IEC 25010, que melhor se adequam ao escopo e à criticidade do sistema.
 
 
