@@ -55,10 +55,10 @@ Testes baseados nas histórias de usuário, focando em:
 | Nº | Descrição   do cenário                                                               |
 |----|--------------------------------------------------------------------------|
 | 1  | Cadastro de novo usuário (fluxo completo desde a página inicial)         |
-| 2  | Agendamento de coleta após login (incluindo seleção de data/hora)        |
+| 2  | Agendamento de coleta após login (incluindo seleção de data)        |
 | 3  | Acompanhamento de status de coleta agendada                              |
 | 4  | Resgate de saldo via Pix (fluxo completo até confirmação)                |
-| 5  | Atualização de dados cadastrais (endereço e telefone)                    |
+| 5  | Atualização de dados cadastrais (Alteração de senha)                    |
 
 ## Ferramentas Utilizadas
 - **Navegador**: Google Chrome (última versão)
