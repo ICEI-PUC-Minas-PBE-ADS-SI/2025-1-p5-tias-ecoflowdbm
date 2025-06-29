@@ -10,182 +10,167 @@ Cada caso de teste contém: identificador único (CT-XXX), pré-condições clar
 
 # Casos de Teste - Aplicação EcoFlow DBM
 
-## CT-001 – Acesso à página inicial
-| Campo                 | Conteúdo                                                                 |
-|-----------------------|--------------------------------------------------------------------------|
-| **Requisito**         | RF-000                                                                  |
-| **Objetivo**          | Verificar carregamento da página principal                              |
-| **Passos**            | 1. Acessar URL<br>2. Verificar elementos<br>3. Medir tempo de resposta  |
-| **Critério de Êxito** | - Load <3s<br>- Elementos visíveis                                      |
-| **Responsável**       | Lucas Silva                                                             |
-| **Evidência**         | ![Etapas](images/Login.png)                                             |
-
----
-
-## CT-002 – Login válido
+## CT-01 – Acesso à página inicial
 | Campo                 | Conteúdo                                                                 |
 |-----------------------|--------------------------------------------------------------------------|
 | **Requisito**         | RF-001                                                                  |
-| **Objetivo**          | Testar autenticação com credenciais corretas                            |
-| **Passos**            | 1. Inserir e-mail válido<br>2. Inserir senha correta<br>3. Submeter     |
-| **Critério de Êxito** | - Redireciona para dashboard<br>- Cookie de sessão criado               |
-| **Responsável**       | Robson Rodrigues                                                        |
-| **Evidência**         | ![Etapas](images/Login.png)                                             |
-
----
-
-## CT-003 – Login inválido
-| Campo                 | Conteúdo                                                                 |
-|-----------------------|--------------------------------------------------------------------------|
-| **Requisito**         | RF-001                                                                  |
-| **Objetivo**          | Verificar tratamento de credenciais incorretas                          |
-| **Passos**            | 1. Inserir e-mail inválido<br>2. Submeter formulário                    |
-| **Critério de Êxito** | - Exibe mensagem de erro<br>- Bloqueia após 3 tentativas                |
+| **Objetivo**          | Verificar carregamento correto da página principal                       |
+| **Passos**            | 1. Acessar URL do sistema<br>2. Verificar elementos essenciais<br>3. Medir tempo de carregamento |
+| **Critério de Êxito** | - Página carrega em <3s<br>- Todos componentes visíveis                 |
 | **Responsável**       | Lucas Silva                                                             |
-| **Evidência**         | ![Etapas](images/Login.png)                                             |
 
 ---
 
-## CT-004 – Cadastro de usuário
+## CT-02 – Login válido
 | Campo                 | Conteúdo                                                                 |
 |-----------------------|--------------------------------------------------------------------------|
 | **Requisito**         | RF-002                                                                  |
-| **Objetivo**          | Validar fluxo de registro                                               |
-| **Passos**            | 1. Preencher formulário<br>2. Aceitar termos<br>3. Confirmar e-mail     |
-| **Critério de Êxito** | - Conta criada no banco<br>- E-mail de confirmação enviado              |
+| **Objetivo**          | Validar autenticação com credenciais corretas                           |
+| **Passos**            | 1. Inserir e-mail cadastrado<br>2. Inserir senha válida<br>3. Clicar em "Entrar" |
+| **Critério de Êxito** | - Redirecionamento para dashboard<br>- Sessão iniciada                  |
 | **Responsável**       | Robson Rodrigues                                                        |
-| **Evidência**         | ![Etapas](images/Login.png)                                             |
 
 ---
 
-## CT-005 – Recuperação de senha
+## CT-03 – Login inválido
+| Campo                 | Conteúdo                                                                 |
+|-----------------------|--------------------------------------------------------------------------|
+| **Requisito**         | RF-002                                                                  |
+| **Objetivo**          | Verificar tratamento de credenciais incorretas                          |
+| **Passos**            | 1. Inserir e-mail não cadastrado<br>2. Inserir senha aleatória<br>3. Tentar login |
+| **Critério de Êxito** | - Mensagem de erro exibida<br>- Conta bloqueada após 3 tentativas       |
+| **Responsável**       | Lucas Silva                                                             |
+
+---
+
+## CT-04 – Cadastro de usuário
 | Campo                 | Conteúdo                                                                 |
 |-----------------------|--------------------------------------------------------------------------|
 | **Requisito**         | RF-003                                                                  |
-| **Objetivo**          | Testar reset de senha                                                   |
-| **Passos**            | 1. Solicitar recuperação<br>2. Acessar link do e-mail<br>3. Nova senha  |
-| **Critério de Êxito** | - Link expira em 24h<br>- Senha é atualizada                            |
-| **Responsável**       | Lucas Silva                                                             |
-| **Evidência**         | ![Etapas](images/Login.png)                                             |
+| **Objetivo**          | Validar criação de nova conta                                           |
+| **Passos**            | 1. Preencher formulário completo<br>2. Aceitar termos<br>3. Confirmar e-mail |
+| **Critério de Êxito** | - Conta criada no banco<br>- E-mail de confirmação enviado              |
+| **Responsável**       | Robson Rodrigues                                                        |
 
 ---
 
-## CT-006 – Agendamento de coleta
+## CT-05 – Recuperação de senha
 | Campo                 | Conteúdo                                                                 |
 |-----------------------|--------------------------------------------------------------------------|
 | **Requisito**         | RF-004                                                                  |
-| **Objetivo**          | Verificar cadastro de coletas                                           |
-| **Passos**            | 1. Selecionar tipo<br>2. Informar endereço<br>3. Escolher data/hora     |
-| **Critério de Êxito** | - Coleta aparece no calendário<br>- Notificação enviada                 |
-| **Responsável**       | Robson Rodrigues                                                        |
-| **Evidência**         | ![Etapas](images/Login.png)                                             |
+| **Objetivo**          | Testar fluxo de redefinição de senha                                    |
+| **Passos**            | 1. Solicitar recuperação<br>2. Acessar link do e-mail<br>3. Criar nova senha |
+| **Critério de Êxito** | - Senha alterada com sucesso<br>- Link expira em 24h                    |
+| **Responsável**       | Lucas Silva                                                             |
 
 ---
 
-## CT-007 – Cancelamento de coleta
+## CT-06 – Agendamento de coleta
 | Campo                 | Conteúdo                                                                 |
 |-----------------------|--------------------------------------------------------------------------|
 | **Requisito**         | RF-005                                                                  |
-| **Objetivo**          | Testar remoção de agendamentos                                          |
-| **Passos**            | 1. Acessar agendamento<br>2. Clicar "Cancelar"<br>3. Confirmar          |
-| **Critério de Êxito** | - Coleta é removida<br>- E-mail de confirmação enviado                  |
-| **Responsável**       | Lucas Silva                                                             |
-| **Evidência**         | ![Etapas](images/Login.png)                                             |
+| **Objetivo**          | Verificar cadastro de nova coleta                                       |
+| **Passos**            | 1. Selecionar tipo de material<br>2. Informar endereço<br>3. Escolher data/hora |
+| **Critério de Êxito** | - Coleta registrada no sistema<br>- Notificação enviada                 |
+| **Responsável**       | Robson Rodrigues                                                        |
 
 ---
 
-## CT-008 – Consulta de saldo
+## CT-07 – Cancelamento de coleta
 | Campo                 | Conteúdo                                                                 |
 |-----------------------|--------------------------------------------------------------------------|
 | **Requisito**         | RF-006                                                                  |
-| **Objetivo**          | Verificar exibição de saldo acumulado                                   |
-| **Passos**            | 1. Acessar perfil<br>2. Navegar para "Saldo"                            |
-| **Critério de Êxito** | - Valor exato é exibido<br>- Atualizado em tempo real                   |
-| **Responsável**       | Robson Rodrigues                                                        |
-| **Evidência**         | ![Etapas](images/Login.png)                                             |
+| **Objetivo**          | Testar remoção de agendamento                                           |
+| **Passos**            | 1. Acessar coleta agendada<br>2. Clicar em "Cancelar"<br>3. Confirmar   |
+| **Critério de Êxito** | - Coleta removida do sistema<br>- E-mail de confirmação enviado         |
+| **Responsável**       | Lucas Silva                                                             |
 
 ---
 
-## CT-009 – Resgate de saldo
+## CT-08 – Consulta de saldo
 | Campo                 | Conteúdo                                                                 |
 |-----------------------|--------------------------------------------------------------------------|
 | **Requisito**         | RF-007                                                                  |
-| **Objetivo**          | Testar conversão de saldo em benefícios                                 |
-| **Passos**            | 1. Selecionar recompensa<br>2. Confirmar resgate<br>3. Verificar e-mail |
-| **Critério de Êxito** | - Saldo debitado<br>- Voucher gerado                                    |
-| **Responsável**       | Lucas Silva                                                             |
-| **Evidência**         | ![Etapas](images/Login.png)                                             |
+| **Objetivo**          | Verificar exibição do saldo acumulado                                   |
+| **Passos**            | 1. Acessar perfil<br>2. Navegar para "Saldo"<br>3. Atualizar página     |
+| **Critério de Êxito** | - Valor exato exibido<br>- Atualização em tempo real                    |
+| **Responsável**       | Robson Rodrigues                                                        |
 
 ---
 
-## CT-010 – Alteração de senha
+## CT-09 – Resgate de saldo
 | Campo                 | Conteúdo                                                                 |
 |-----------------------|--------------------------------------------------------------------------|
 | **Requisito**         | RF-008                                                                  |
-| **Objetivo**          | Validar atualização de senha                                            |
-| **Passos**            | 1. Acessar "Segurança"<br>2. Inserir senha atual<br>3. Cadastrar nova   |
-| **Critério de Êxito** | - Senha alterada<br>- Requer login com nova credencial                  |
-| **Responsável**       | Robson Rodrigues                                                        |
-| **Evidência**         | ![Etapas](images/Login.png)                                             |
+| **Objetivo**          | Testar conversão de saldo em benefícios                                 |
+| **Passos**            | 1. Selecionar recompensa<br>2. Confirmar resgate<br>3. Verificar e-mail |
+| **Critério de Êxito** | - Saldo debitado corretamente<br>- Voucher gerado                       |
+| **Responsável**       | Lucas Silva                                                             |
 
 ---
 
-## CT-011 – Logout
+## CT-10 – Alteração de senha
 | Campo                 | Conteúdo                                                                 |
 |-----------------------|--------------------------------------------------------------------------|
 | **Requisito**         | RF-009                                                                  |
-| **Objetivo**          | Testar encerramento de sessão                                           |
-| **Passos**            | 1. Clicar em "Sair"<br>2. Tentar acessar área restrita                  |
-| **Critério de Êxito** | - Sessão invalidada<br>- Redireciona para login                         |
-| **Responsável**       | Lucas Silva                                                             |
-| **Evidência**         | ![Etapas](images/Login.png)                                             |
+| **Objetivo**          | Validar atualização de credenciais                                      |
+| **Passos**            | 1. Acessar "Segurança"<br>2. Inserir senha atual<br>3. Cadastrar nova   |
+| **Critério de Êxito** | - Senha alterada<br>- Requer nova autenticação                         |
+| **Responsável**       | Robson Rodrigues                                                        |
 
 ---
 
-## CT-012 – Relatório de coletas
+## CT-11 – Logout
 | Campo                 | Conteúdo                                                                 |
 |-----------------------|--------------------------------------------------------------------------|
 | **Requisito**         | RF-010                                                                  |
-| **Objetivo**          | Verificar geração de documentos                                         |
-| **Passos**            | 1. Filtrar por período<br>2. Selecionar formato<br>3. Gerar relatório   |
-| **Critério de Êxito** | - Arquivo download<br>- Dados consistentes                              |
-| **Responsável**       | Robson Rodrigues                                                        |
-| **Evidência**         | ![Etapas](images/Login.png)                                             |
+| **Objetivo**          | Testar encerramento de sessão                                           |
+| **Passos**            | 1. Clicar em "Sair"<br>2. Tentar acessar área restrita                  |
+| **Critério de Êxito** | - Sessão encerrada<br>- Redirecionamento para login                     |
+| **Responsável**       | Lucas Silva                                                             |
 
 ---
 
-## CT-013 – Integração com WhatsApp
+## CT-12 – Relatório de coletas
 | Campo                 | Conteúdo                                                                 |
 |-----------------------|--------------------------------------------------------------------------|
 | **Requisito**         | RF-011                                                                  |
-| **Objetivo**          | Validar canal de suporte                                                |
-| **Passos**            | 1. Clicar em "Ajuda"<br>2. Iniciar chat<br>3. Enviar mensagem teste     |
-| **Critério de Êxito** | - Chat aberto<br>- Mensagem recebida                                    |
-| **Responsável**       | Lucas Silva                                                             |
-| **Evidência**         | ![Etapas](images/Login.png)                                             |
+| **Objetivo**          | Validar geração de documentos                                           |
+| **Passos**            | 1. Filtrar por período<br>2. Selecionar formato<br>3. Gerar relatório   |
+| **Critério de Êxito** | - Arquivo gerado<br>- Dados consistentes                                |
+| **Responsável**       | Robson Rodrigues                                                        |
 
 ---
 
-## CT-014 – Aprovação de coletas (admin)
+## CT-13 – Integração com WhatsApp
 | Campo                 | Conteúdo                                                                 |
 |-----------------------|--------------------------------------------------------------------------|
 | **Requisito**         | RF-012                                                                  |
+| **Objetivo**          | Testar canal de suporte                                                 |
+| **Passos**            | 1. Clicar em "Ajuda"<br>2. Iniciar conversa<br>3. Enviar mensagem teste |
+| **Critério de Êxito** | - Chat iniciado<br>- Mensagem recebida                                  |
+| **Responsável**       | Lucas Silva                                                             |
+
+---
+
+## CT-14 – Aprovação de coletas (admin)
+| Campo                 | Conteúdo                                                                 |
+|-----------------------|--------------------------------------------------------------------------|
+| **Requisito**         | RF-013                                                                  |
 | **Objetivo**          | Validar fluxo administrativo                                            |
 | **Passos**            | 1. Login como admin<br>2. Aprovar coleta<br>3. Verificar status         |
 | **Critério de Êxito** | - Status atualizado<br>- Usuário notificado                             |
 | **Responsável**       | Robson Rodrigues                                                        |
-| **Evidência**         | ![Etapas](images/Login.png)                                             |
 
 ---
 
-## CT-015 – Responsividade
+## CT-15 – Responsividade
 | Campo                 | Conteúdo                                                                 |
 |-----------------------|--------------------------------------------------------------------------|
-| **Requisito**         | RF-013                                                                  |
+| **Requisito**         | RF-014                                                                  |
 | **Objetivo**          | Verificar adaptação a diferentes telas                                  |
 | **Passos**            | 1. Testar em mobile<br>2. Verificar tablet<br>3. Checar desktop         |
 | **Critério de Êxito** | - Layout responsivo<br>- Funcionalidades acessíveis                     |
-| **Responsável**       | Lucas Silva                                                             |
-| **Evidência**         | ![Etapas](images/Login.png)                                             |
+| **Responsável**       | Lucas Silva                                                             |                                        |
 
 <p align="justify">Os resultados obtidos nesta bateria de testes servirão como base para a liberação das versões em ambiente de homologação e produção, além de fornecer métricas objetivas sobre a maturidade do sistema. Recomenda-se a execução completa desta suite antes de cada deploy significativo no ambiente produtivo. 
