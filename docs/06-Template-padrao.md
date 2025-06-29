@@ -16,13 +16,17 @@ Foram utilizadas referências visuais presentes em plataformas sustentáveis e d
 
 ## 🌈 Paleta de Cores
 
-A paleta de cores é composta por tons que remetem diretamente à natureza e à ação ambiental:
+A paleta é composta por tons que remetem à natureza e à ação ambiental, reforçando a identidade da plataforma:
 
-- **Verde escuro (EcoFlow DBM logo):** Representa solidez, conexão com o meio ambiente e confiança.
-- **Verde claro:** Traz frescor e sensação de leveza, contribuindo com a identidade acolhedora da plataforma.
-- **Elementos em vermelho e ícones coloridos:** Usados pontualmente para representar ações (como histórico, acompanhamento, recompensas), trazendo dinamismo e facilitando a identificação visual das funcionalidades.
+Verde escuro (logotipo EcoFlow DBM): Representa solidez, conexão com o meio ambiente e confiança.
 
-Essa combinação cria um equilíbrio entre modernidade e propósito ecológico, favorecendo tanto a navegação quanto o engajamento com o sistema.
+Verde claro: Traz frescor e leveza, contribuindo para uma identidade acolhedora.
+
+Roxo (fundo/áreas traseiras): Aplicado em camadas de fundo ou elementos secundários, o roxo adiciona profundidade e contraste sutil, simbolizando inovação e equilíbrio. Sua presença discreta reforça a modernidade sem competir com as cores principais.
+
+Vermelho e ícones coloridos: Utilizados pontualmente para ações (histórico, acompanhamento), trazendo dinamismo e clareza visual.
+
+Essa combinação cria uma hierarquia harmoniosa, onde o roxo atua como base neutra e sofisticada, enquanto os tons verdes e os detalhes vibrantes guiam o foco do usuário.
 
 ---
 
