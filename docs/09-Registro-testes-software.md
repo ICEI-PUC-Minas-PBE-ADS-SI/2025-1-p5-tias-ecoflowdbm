@@ -81,4 +81,4 @@ As evidências apresentadas consistem em capturas de tela e gravações em víde
 | Caso de teste          | CT-015 – Visualizar histórico                |
 |------------------------|----------------------------------------|
 | Requisito associado    | RF-011 - Exibir automaticamente as coletas aprovadas no Histórico |
-| Registro de evidência  | ![Etapas](images/CT015.png)            |
+| Registro de evidência  | ![Etapas](images/CT01515.png)            |
