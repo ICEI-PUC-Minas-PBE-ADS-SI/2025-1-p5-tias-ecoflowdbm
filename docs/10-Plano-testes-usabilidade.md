@@ -16,7 +16,6 @@ Testes baseados nas histórias de usuário, focando em:
 ## Critérios de Seleção dos Participantes
 - **Faixa etária**: 18 a 55 anos  
 - **Perfil tecnológico**: Variados níveis de familiaridade  
-- **Experiência**: ≥1 participante com vivência em coleta seletiva  
 - **Diversidade**: Representatividade de gêneros  
 
 ## Procedimentos
