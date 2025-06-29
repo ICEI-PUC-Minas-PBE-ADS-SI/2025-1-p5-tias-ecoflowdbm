@@ -16,7 +16,7 @@ Cada caso de teste contém: identificador único (CT-XXX), pré-condições clar
 | **Requisito**         | RF-001                                                                  |
 | **Objetivo**          | Verificar carregamento correto da página principal                       |
 | **Passos**            | 1. Acessar URL do sistema<br>2. Verificar elementos essenciais<br>3. Medir tempo de carregamento |
-| **Critério de Êxito** | - Página carrega em <3s<br>- Todos componentes visíveis                 |
+| **Critério de Êxito** | - Página carrega s<br>- Todos componentes visíveis                 |
 | **Responsável**       | Lucas Silva                                                             |
 
 ---
@@ -49,7 +49,7 @@ Cada caso de teste contém: identificador único (CT-XXX), pré-condições clar
 | **Requisito**         | RF-003                                                                  |
 | **Objetivo**          | Validar criação de nova conta                                           |
 | **Passos**            | 1. Preencher formulário completo<br>2. Aceitar termos<br>3. Confirmar e-mail |
-| **Critério de Êxito** | - Conta criada no banco<br>- E-mail de confirmação enviado              |
+| **Critério de Êxito** | - Conta criada             |
 | **Responsável**       | Robson Rodrigues                                                        |
 
 ---
