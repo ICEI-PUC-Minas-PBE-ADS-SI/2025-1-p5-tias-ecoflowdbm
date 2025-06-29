@@ -167,7 +167,7 @@ Exemplo: os artefatos do projeto são desenvolvidos a partir de diversas platafo
 |-------------------------------------|------------------------------------|----------------------------------------|
 | Repositório de código fonte         | GitHub                             | [http://.... ](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-ecoflowdbm)                           |
 | Documentos do projeto               | GitHub                             | [http://....](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-ecoflowdbm)                            |
-| Projeto de interface                | Figma                              | [http://.... ]([https://www.figma.com/design/Mqi1j2yFVllhyIWU0P76ib/APP-EcoFlow-DBM?node-id=0-1&t=iQIJ1asjwoQMlIsn-1](https://www.figma.com/design/Mqi1j2yFVllhyIWU0P76ib/APP-EcoFlow-DBM?node-id=0-1&t=B3r0TRmAznOgqvRH-1))                           |
+| Projeto de interface                | Figma                              | [http://.... ](https://www.figma.com/design/Mqi1j2yFVllhyIWU0P76ib/APP-EcoFlow-DBM?node-id=0-1&t=B3r0TRmAznOgqvRH-1) 
 | Gerenciamento do projeto            | GitHub Projects                    | [http://....](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-ecoflowdbm)                            |
 | Hospedagem                          | A definir                           | http://....                            |
  
