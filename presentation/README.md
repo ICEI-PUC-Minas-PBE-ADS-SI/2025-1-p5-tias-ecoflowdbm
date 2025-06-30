@@ -14,15 +14,16 @@
 ## Vídeo
 
 
+Confira abaixo o vídeo demonstrativo do projeto:
 
 
-A seguir, estão as especificações técnicas que devem ser seguidas na criação do vídeo:
+https://github.com/user-attachments/assets/332240fc-4a7b-490f-bf0a-bf190781f884
 
 
 
-> - tamanho do arquivo limitado a 90Mb
-> - taxa de FPS limitada a 30 quadros por segundo
-> - resolução HD (720p) ou Full HD (1080p)
-> - formato mp4.
+
+
+
+
 
 
