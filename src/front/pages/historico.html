@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoFlow DBM - Histórico de Coletas</title>
+  <link rel="icon" type="image/x-icon" href="../assets/favicons/favicon.ico" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <main class="container large">
+    <h1>📜 Histórico de Coletas</h1>
+    <p>Coletas concluídas e creditadas</p>
+
+    <button class="btn refresh-btn">
+      🔄 Atualizar Histórico
+    </button>
+
+    <div class="stats-container" id="stats-container">
+      </div>
+
+    <div id="lista-historico" class="coletas-list">
+      </div>
+
+    <div class="empty-state" id="empty-state" style="display: none;">
+      <i>📋</i>
+      <h3>Nenhuma coleta concluída</h3>
+      <p>Suas coletas concluídas aparecerão aqui no histórico.</p>
+      <a href="gerenciar-coletas.html" class="btn btn-primary">Ver Coletas Aprovadas</a>
+    </div>
+
+    <a href="home.html" class="btn btn-secondary">Voltar para a Tela Inicial</a>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script type="module" src="../assets/js/app.js"></script>
+</body>
+</html>

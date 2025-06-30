@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoFlow DBM - Gerenciar Coletas</title>
+  <link rel="icon" type="image/x-icon" href="../assets/favicons/favicon.ico" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/pages/_gerenciar-coletas.css" />
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <main class="container">
+    <h1>🗂️ Gerenciar Coletas</h1>
+    <p>Coletas pendentes e aprovadas para gerenciamento</p>
+
+    <button class="btn refresh-btn">
+      🔄 Atualizar Lista
+    </button>
+
+    <div id="lista-coletas-aprovadas">
+      </div>
+
+    <div class="empty-state" id="empty-state" style="display: none;">
+      <i>📋</i>
+      <h3>Nenhuma coleta para gerenciar</h3>
+      <p>Suas coletas aparecerão aqui para aprovação, edição e conclusão.</p>
+      <a href="acompanhar-coleta.html" class="btn btn-primary">Ver Coletas Pendentes (Somente Leitura)</a>
+    </div>
+
+    <a href="home.html" class="btn btn-secondary">Voltar para a Tela Inicial</a>
+  </main>
+
+  <div id="modal-editar" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Editar Coleta</h2>
+        <span class="close" onclick="fecharModal()">&times;</span>
+      </div>
+
+      <form id="form-editar">
+        <div class="form-group">
+          <label for="edit-cliente">Nome do Cliente</label>
+          <input type="text" id="edit-cliente" required>
+        </div>
+
+        <div class="form-group">
+          <label for="edit-endereco">Endereço</label>
+          <input type="text" id="edit-endereco" required>
+        </div>
+
+        <div class="form-group">
+          <label for="edit-quantidade">Quantidade de Garrafas</label>
+          <input type="number" id="edit-quantidade" min="1" required>
+        </div>
+
+        <div class="form-group">
+          <label for="edit-data">Data da Coleta</label>
+          <input type="date" id="edit-data" required>
+        </div>
+
+        <div style="display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px;">
+          <button type="button" class="btn btn-secondary" onclick="fecharModal()">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+  <script type="module" src="../assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoFlow DBM - Acompanhar Coleta</title>
+  <link rel="icon" type="image/x-icon" href="../assets/favicons/favicon.ico" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <main class="container">
+    <h1>🚚 Acompanhar Coleta</h1>
+    <p>Coletas aguardando aprovação</p>
+
+    <button class="btn refresh-btn">
+      🔄 Atualizar Lista
+    </button>
+
+    <div id="lista-coletas-pendentes">
+      </div>
+
+    <div class="empty-state" id="empty-state" style="display: none;">
+      <i>📦</i>
+      <h3>Nenhuma coleta pendente</h3>
+      <p>Suas coletas pendentes aparecerão aqui aguardando aprovação.</p>
+      <a href="cadastro-coleta.html" class="btn btn-primary">Cadastrar Nova Coleta</a>
+    </div>
+
+    <a href="home.html" class="btn btn-secondary">Voltar para a Tela Inicial</a>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script type="module" src="../assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoFlow DBM - Início</title>
+  <link rel="icon" type="image/x-icon" href="../assets/favicons/favicon.ico" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/pages/_home.css" />
+</head>
+<body>
+  <header class="header-home">
+    <div class="header-left">
+      <h1>EcoFlow DBM</h1>
+      <p id="welcome-message">Bem-vindo(a) ao seu painel de gestão!</p>
+    </div>
+
+    <div class="header-right">
+      <button class="header-btn" onclick="window.location.href='suporte.html'">
+        💬<br><span>Suporte</span>
+      </button>
+      <button class="header-btn" onclick="window.location.href='configuracoes.html'">
+        ⚙️<br><span>Configurações</span>
+      </button>
+      <button class="header-btn" onclick="window.location.href='relatorios.html'">
+        📊<br><span>Relatórios</span>
+      </button>
+      <button class="header-btn" onclick="window.sair()"> 🚪<br><span>Sair</span>
+      </button>
+    </div>
+  </header>
+  <button class="dark-mode-toggle" onclick="window.toggleDarkMode()">🌙</button>
+
+  <main class="container large">
+    <div class="welcome-section">
+      <h2>Gerencie suas Coletas de Forma Inteligente</h2>
+      <p>Transforme resíduos em recompensas e contribua para um mundo mais sustentável</p>
+    </div>
+
+    <div class="main-menu">
+      <a href="cadastro-coleta.html" class="menu-card">
+        <span class="menu-card-icon">📦</span>
+        <div class="menu-card-title">Cadastro de Coleta</div>
+        <div class="menu-card-description">Registre uma nova coleta de garrafas e inicie o processo de reciclagem</div>
+      </a>
+
+      <a href="acompanhar-coleta.html" class="menu-card">
+        <span class="menu-card-icon">🚚</span>
+        <div class="menu-card-title">Acompanhar Coleta</div>
+        <div class="menu-card-description">Monitore suas coletas pendentes aguardando aprovação</div>
+      </a>
+
+      <a href="gerenciar-coletas.html" class="menu-card">
+        <span class="menu-card-icon">🗂️</span>
+        <div class="menu-card-title">Gerenciar Coletas</div>
+        <div class="menu-card-description">Edite, exclua ou conclua suas coletas aprovadas</div>
+      </a>
+
+      <a href="historico.html" class="menu-card">
+        <span class="menu-card-icon">📜</span>
+        <div class="menu-card-title">Histórico de Coleta</div>
+        <div class="menu-card-description">Visualize todas as suas coletas concluídas e valores creditados</div>
+      </a>
+
+      <a href="recompensas.html" class="menu-card">
+        <span class="menu-card-icon">🎁</span>
+        <div class="menu-card-title">Recompensas</div>
+        <div class="menu-card-description">Consulte seu saldo e resgate suas recompensas via PIX</div>
+      </a>
+    </div>
+
+    <div class="stats-section">
+      <h3 class="stats-title">📊 Suas Estatísticas</h3>
+      <div class="stats-grid" id="stats-grid">
+        </div>
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script type="module" src="../assets/js/app.js"></script>
+</body>
+</html>

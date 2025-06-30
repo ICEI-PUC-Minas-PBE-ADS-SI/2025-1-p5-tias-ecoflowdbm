@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoFlow DBM - Relatórios</title>
+  <link rel="icon" type="image/x-icon" href="../assets/favicons/favicon.ico" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/pages/_relatorios.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <main class="container">
+    <h2>Relatório de Coletas</h2>
+
+    <div class="table-container"> <table id="tabela-relatorio">
+        <thead>
+          <tr>
+            <th>Nome do Cliente</th>
+            <th>Data</th>
+            <th>Quantidade</th>
+            <th>Valor (R$)</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <button class="btn btn-primary" id="btn-gerar-pdf">📥 Baixar Relatório (PDF)</button>
+    <button class="btn btn-secondary" id="btn-gerar-excel">📊 Baixar Relatório (Excel)</button>
+    <a href="home.html" class="btn btn-secondary">Voltar para a Tela Inicial</a>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script type="module" src="../assets/js/app.js"></script>
+</body>
+</html>
