@@ -11,6 +11,8 @@
 - [Apresentação Sprint 4](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-ecoflowdbm/blob/main/presentation/Aprensenta%C3%A7%C3%A3o%20Sprint%204.pdf)
 - [Apresentação Sprint 5](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-ecoflowdbm/blob/main/presentation/Aprensenta%C3%A7%C3%A3o%20Sprint%205.pdf)
 
+- Link deploy:(https://lively-glacier-0adfa3b0f.2.azurestaticapps.net/acessar.html), O deploy está funcionando parcialmente. A interface frontend está disponível, mas não há conexão com o backend, o que limita a funcionalidade completa da aplicação.
+
 ## Vídeo
 
 
