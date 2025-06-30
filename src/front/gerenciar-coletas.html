@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoFlow DBM - Gerenciar Coletas</title>
+  <link rel="stylesheet" href="gerenciar-coletas.css" />
+  <style>
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      background: linear-gradient(135deg, #2E8B57, #3CB371);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin: -20px -20px 20px -20px;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .status-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .status-aprovada {
+      background-color: #D4EDDA;
+      color: #155724;
+      border: 1px solid #C3E6CB;
+    }
+
+    .coleta-card {
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 15px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .coleta-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .coleta-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .coleta-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    .info-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .info-label {
+      font-weight: bold;
+      color: #495057;
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    .info-value {
+      color: #212529;
+      font-size: 14px;
+    }
+
+    .coleta-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid #e9ecef;
+    }
+
+    .btn {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 500;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+      font-size: 14px;
+    }
+
+    .btn-edit {
+      background: #007bff;
+      color: white;
+    }
+
+    .btn-edit:hover {
+      background: #0056b3;
+    }
+
+    .btn-delete {
+      background: #dc3545;
+      color: white;
+    }
+
+    .btn-delete:hover {
+      background: #c82333;
+    }
+
+    .btn-complete {
+      background: #28a745;
+      color: white;
+    }
+
+    .btn-complete:hover {
+      background: #1e7e34;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #2E8B57, #3CB371);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #1e5f3f, #2a8f5a);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: #6c757d;
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      background: #545b62;
+    }
+
+    .refresh-btn {
+      background: #17a2b8;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .refresh-btn:hover {
+      background: #138496;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: #6c757d;
+    }
+
+    .empty-state i {
+      font-size: 48px;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+      background-color: white;
+      margin: 5% auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 500px;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e9ecef;
+    }
+
+    .close {
+      color: #aaa;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: #000;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #495057;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .form-group input:focus {
+      outline: none;
+      border-color: #2E8B57;
+      box-shadow: 0 0 0 2px rgba(46, 139, 87, 0.2);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        margin: 10px;
+        padding: 15px;
+      }
+
+      .coleta-info {
+        grid-template-columns: 1fr;
+      }
+
+      .coleta-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .coleta-actions {
+        flex-direction: column;
+      }
+
+      .modal-content {
+        margin: 10% auto;
+        width: 95%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>🗂️ Gerenciar Coletas</h1>
+      <p>Coletas aprovadas aguardando conclusão</p>
+    </div>
+
+    <button class="btn refresh-btn" onclick="carregarColetasAprovadas()">
+      🔄 Atualizar Lista
+    </button>
+
+    <div id="lista-coletas-aprovadas">
+      <!-- Coletas aprovadas serão carregadas aqui -->
+    </div>
+
+    <div class="empty-state" id="empty-state" style="display: none;">
+      <i>📋</i>
+      <h3>Nenhuma coleta aprovada</h3>
+      <p>Suas coletas aprovadas aparecerão aqui para gerenciamento.</p>
+      <a href="acompanhar-coleta.html" class="btn btn-primary">Ver Coletas Pendentes</a>
+    </div>
+
+    <a href="home.html" class="btn btn-secondary">Voltar para a Tela Inicial</a>
+  </div>
+
+  <!-- Modal para editar coleta -->
+  <div id="modal-editar" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Editar Coleta</h2>
+        <span class="close" onclick="fecharModal()">&times;</span>
+      </div>
+      
+      <form id="form-editar">
+        <div class="form-group">
+          <label for="edit-cliente">Nome do Cliente</label>
+          <input type="text" id="edit-cliente" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="edit-endereco">Endereço</label>
+          <input type="text" id="edit-endereco" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="edit-quantidade">Quantidade de Garrafas</label>
+          <input type="number" id="edit-quantidade" min="1" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="edit-data">Data da Coleta</label>
+          <input type="date" id="edit-data" required>
+        </div>
+        
+        <div style="display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px;">
+          <button type="button" class="btn btn-secondary" onclick="fecharModal()">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+<script>
+  if (!verificarAutenticacao()) { /* Ação já tratada */ }
+
+  let coletaEditando = null; // Variável para o modal de edição
+
+  // Função que ABRE o modal de edição (esta fica aqui, pois manipula o DOM local)
+  async function abrirModalEdicao(id) {
+      try {
+          const response = await fetchAutenticado(`${API_BASE_URL}/coletas/gerenciar`); // Ou `/coletas/${id}` se você criar a rota no backend
+          const coletas = await response.json();
+          const coleta = coletas.find(c => c.id === id);
+          
+          if (!coleta) { alert('Coleta não encontrada'); return; }
+
+          document.getElementById('edit-cliente').value = coleta.cliente;
+          document.getElementById('edit-endereco').value = coleta.endereco;
+          document.getElementById('edit-quantidade').value = coleta.quantidade;
+          document.getElementById('edit-data').value = coleta.data;
+          
+          coletaEditando = id;
+          document.getElementById('modal-editar').style.display = 'block';
+      } catch (error) {
+          console.error('Erro ao carregar dados da coleta para edição:', error);
+          alert('Erro ao carregar dados da coleta para edição');
+      }
+  }
+
+  // Função para fechar modal (fica aqui)
+  function fecharModal() {
+      document.getElementById('modal-editar').style.display = 'none';
+      coletaEditando = null;
+  }
+
+  // Listener para o SUBMIT do formulário de edição do modal
+  document.getElementById('form-editar').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      if (!coletaEditando) return;
+
+      const dados = {
+          cliente: document.getElementById('edit-cliente').value,
+          endereco: document.getElementById('edit-endereco').value,
+          quantidade: parseInt(document.getElementById('edit-quantidade').value),
+          data: document.getElementById('edit-data').value
+      };
+
+      try {
+          const response = await fetchAutenticado(`${API_BASE_URL}/coletas/${coletaEditando}`, {
+              method: 'PUT',
+              body: JSON.stringify(dados)
+          });
+
+          const result = await response.json();
+
+          if (response.ok) {
+              alert('Coleta editada com sucesso!');
+              fecharModal();
+              carregarColetasAprovadas(); // Função GLOBAL do script.js
+          } else {
+              alert(result.message || 'Erro ao editar coleta');
+          }
+      } catch (error) {
+          console.error('Erro ao editar coleta:', error);
+          alert('Erro ao editar coleta');
+      }
+  });
+
+  // Fechar modal ao clicar fora dele
+  window.onclick = function(event) {
+      const modal = document.getElementById('modal-editar');
+      if (event.target === modal) {
+          fecharModal();
+      }
+  }
+
+  // Chamada inicial para carregar as coletas ao abrir a página
+  document.addEventListener('DOMContentLoaded', carregarColetasAprovadas); // Função GLOBAL do script.js
+</script>
+
+</body>
+</html>
+

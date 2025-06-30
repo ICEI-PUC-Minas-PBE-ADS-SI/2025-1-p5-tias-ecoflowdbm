@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoFlow DBM - Acompanhar Coleta</title>
+  <link rel="stylesheet" href="acompanhar-coleta.css" />
+  <style>
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      background: linear-gradient(135deg, #2E8B57, #3CB371);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin: -20px -20px 20px -20px;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .status-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .status-pendente {
+      background-color: #FFF3CD;
+      color: #856404;
+      border: 1px solid #FFEAA7;
+    }
+
+    .coleta-card {
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 15px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .coleta-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .coleta-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .coleta-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    .info-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .info-label {
+      font-weight: bold;
+      color: #495057;
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    .info-value {
+      color: #212529;
+      font-size: 14px;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: #6c757d;
+    }
+
+    .empty-state i {
+      font-size: 48px;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 500;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #2E8B57, #3CB371);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #1e5f3f, #2a8f5a);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: #6c757d;
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      background: #545b62;
+    }
+
+    .refresh-btn {
+      background: #17a2b8;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .refresh-btn:hover {
+      background: #138496;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        margin: 10px;
+        padding: 15px;
+      }
+
+      .coleta-info {
+        grid-template-columns: 1fr;
+      }
+
+      .coleta-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>🚚 Acompanhar Coleta</h1>
+      <p>Coletas aguardando aprovação</p>
+    </div>
+
+    <button class="btn refresh-btn" onclick="carregarColetasPendentes()">
+      🔄 Atualizar Lista
+    </button>
+
+    <div id="lista-coletas-pendentes">
+      <!-- Coletas pendentes serão carregadas aqui -->
+    </div>
+
+    <div class="empty-state" id="empty-state" style="display: none;">
+      <i>📦</i>
+      <h3>Nenhuma coleta pendente</h3>
+      <p>Suas coletas aprovadas aparecerão aqui aguardando aprovação.</p>
+      <a href="cadastro-coleta.html" class="btn btn-primary">Cadastrar Nova Coleta</a>
+    </div>
+
+    <a href="home.html" class="btn btn-secondary">Voltar para a Tela Inicial</a>
+  </div>
+
+  <script src="script.js"></script>
+<script>
+  if (!verificarAutenticacao()) { /* Ação já tratada */ }
+  // Chama a função global carregarColetasPendentes do script.js
+  document.addEventListener('DOMContentLoaded', carregarColetasPendentes);
+</script>
+
+</body>
+</html>
+

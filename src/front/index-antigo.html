@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoFlow DBM - Sistema de Gestão de Coletas</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Botão Modo Escuro -->
+  <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+
+  <!-- Tela de Login -->
+  <div id="login-screen" class="screen active">
+    <div class="container login-container">
+      <div class="logo-acesso">
+        <img src="imagens/Logo.png" alt="Logo EcoFlow">
+        <h1>EcoFlow DBM</h1>
+        <p>Sistema de Gestão de Coletas Sustentáveis</p>
+      </div>
+      
+      <form id="login-form" onsubmit="event.preventDefault(); fazerLogin();">
+        <h2>Acessar Sistema</h2>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+        
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" required />
+        
+        <button type="submit">Entrar</button>
+        
+        <div class="form-links">
+          <a href="#" onclick="showScreen('register-screen')">Criar conta</a>
+          <a href="#" onclick="showScreen('forgot-password-screen')">Esqueci minha senha</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Tela de Cadastro -->
+  <div id="register-screen" class="screen">
+    <div class="container login-container">
+      <div class="logo-acesso">
+        <img src="imagens/Logo.png" alt="Logo EcoFlow">
+        <h1>EcoFlow DBM</h1>
+        <p>Criar Nova Conta</p>
+      </div>
+      
+      <form id="register-form" onsubmit="event.preventDefault(); cadastrar();">
+        <h2>Cadastro</h2>
+        
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" required />
+        
+        <label for="email-cadastro">Email:</label>
+        <input type="email" id="email-cadastro" required />
+        
+        <label for="senha-cadastro">Senha:</label>
+        <input type="password" id="senha-cadastro" required />
+        
+        <button type="submit">Cadastrar</button>
+        
+        <div class="form-links">
+          <a href="#" onclick="showScreen('login-screen')">Já tenho conta</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Tela de Recuperar Senha -->
+  <div id="forgot-password-screen" class="screen">
+    <div class="container login-container">
+      <div class="logo-acesso">
+        <img src="imagens/Logo.png" alt="Logo EcoFlow">
+        <h1>EcoFlow DBM</h1>
+        <p>Recuperar Senha</p>
+      </div>
+      
+      <form id="forgot-form" onsubmit="event.preventDefault(); recuperarSenha();">
+        <h2>Recuperar Senha</h2>
+        
+        <label for="email-recuperar">Email:</label>
+        <input type="email" id="email-recuperar" required />
+        
+        <button type="submit">Enviar Link</button>
+        
+        <div class="form-links">
+          <a href="#" onclick="showScreen('login-screen')">Voltar ao login</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Aplicação Principal -->
+  <div id="main-app" class="screen">
+    <div class="app-container">
+      <!-- Cabeçalho -->
+      <div class="header">
+        <div class="header-left">
+          <h1>EcoFlow DBM</h1>
+          <p>Bem-vindo(a) ao seu painel de gestão!</p>
+        </div>
+
+        <div class="header-right">
+          <button class="header-btn" onclick="showTab('suporte-tab')">
+            💬<br><span>Suporte</span>
+          </button>
+          <button class="header-btn" onclick="showTab('configuracoes-tab')">
+            ⚙️<br><span>Configurações</span>
+          </button>
+          <button class="header-btn" onclick="showTab('relatorios-tab')">
+            📊<br><span>Relatórios</span>
+          </button>
+          <button class="header-btn" onclick="sair()">
+            🚪<br><span>Sair</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Navegação por Abas -->
+      <div class="tab-navigation">
+        <button class="tab-btn active" onclick="showTab('home-tab')">🏠 Início</button>
+        <button class="tab-btn" onclick="showTab('cadastro-coleta-tab')">📦 Cadastrar Coleta</button>
+        <button class="tab-btn" onclick="showTab('acompanhar-coleta-tab')">🚚 Acompanhar Coleta</button>
+        <button class="tab-btn" onclick="showTab('gerenciar-coletas-tab')">🗂️ Gerenciar Coletas</button>
+        <button class="tab-btn" onclick="showTab('historico-tab')">📜 Histórico</button>
+        <button class="tab-btn" onclick="showTab('recompensas-tab')">🎁 Recompensas</button>
+      </div>
+
+      <!-- Conteúdo das Abas -->
+      <div class="tab-content">
+        
+        <!-- Aba Início -->
+        <div id="home-tab" class="tab-pane active">
+          <div class="welcome-section">
+            <h2>Gerencie suas Coletas de Forma Inteligente</h2>
+            <p>Transforme resíduos em recompensas e contribua para um mundo mais sustentável</p>
+          </div>
+
+          <div class="main-menu">
+            <div class="menu-card" onclick="showTab('cadastro-coleta-tab')">
+              <span class="menu-card-icon">📦</span>
+              <div class="menu-card-title">Cadastro de Coleta</div>
+              <div class="menu-card-description">Registre uma nova coleta de garrafas e inicie o processo de reciclagem</div>
+            </div>
+
+            <div class="menu-card" onclick="showTab('acompanhar-coleta-tab')">
+              <span class="menu-card-icon">🚚</span>
+              <div class="menu-card-title">Acompanhar Coleta</div>
+              <div class="menu-card-description">Monitore suas coletas pendentes aguardando aprovação</div>
+            </div>
+
+            <div class="menu-card" onclick="showTab('gerenciar-coletas-tab')">
+              <span class="menu-card-icon">🗂️</span>
+              <div class="menu-card-title">Gerenciar Coletas</div>
+              <div class="menu-card-description">Edite, exclua ou conclua suas coletas aprovadas</div>
+            </div>
+
+            <div class="menu-card" onclick="showTab('historico-tab')">
+              <span class="menu-card-icon">📜</span>
+              <div class="menu-card-title">Histórico de Coleta</div>
+              <div class="menu-card-description">Visualize todas as suas coletas concluídas e valores creditados</div>
+            </div>
+
+            <div class="menu-card" onclick="showTab('recompensas-tab')">
+              <span class="menu-card-icon">🎁</span>
+              <div class="menu-card-title">Recompensas</div>
+              <div class="menu-card-description">Consulte seu saldo e resgate suas recompensas via PIX</div>
+            </div>
+          </div>
+
+          <div class="stats-section">
+            <h3 class="stats-title">📊 Suas Estatísticas</h3>
+            <div class="stats-grid" id="stats-grid">
+              <!-- Estatísticas serão carregadas aqui -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Aba Cadastro de Coleta -->
+        <div id="cadastro-coleta-tab" class="tab-pane">
+          <div class="form-section">
+            <h2>📦 Cadastro de Coleta</h2>
+            
+            <div class="info-card">
+              <h3>💡 Como funciona?</h3>
+              <p>Cadastre sua coleta de garrafas e aguarde a aprovação. Após aprovada, você poderá gerenciar e concluir a coleta para receber o valor em seu saldo.</p>
+              <div class="value-display">
+                <strong>Valor por garrafa: R$ 0,85</strong>
+              </div>
+            </div>
+            
+            <form id="coleta-form" onsubmit="event.preventDefault(); adicionarColeta();">
+              <div class="form-group">
+                <label for="cliente">👤 Nome do Cliente:</label>
+                <input type="text" id="cliente" placeholder="Digite o nome completo do cliente" required />
+              </div>
+              
+              <div class="form-group">
+                <label for="endereco">📍 Endereço da Coleta:</label>
+                <input type="text" id="endereco" placeholder="Endereço completo da coleta" required />
+              </div>
+              
+              <div class="form-group">
+                <label for="data">📅 Data da Coleta:</label>
+                <input type="date" id="data" required />
+              </div>
+              
+              <div class="form-group">
+                <label for="quantidade">🍾 Quantidade de Garrafas:</label>
+                <input type="number" id="quantidade" min="1" placeholder="Número de garrafas a serem coletadas" required />
+              </div>
+              
+              <button type="submit" class="btn-primary">✅ Cadastrar Coleta</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Aba Acompanhar Coleta -->
+        <div id="acompanhar-coleta-tab" class="tab-pane">
+          <div class="section-header">
+            <h2>🚚 Acompanhar Coletas</h2>
+            <p>Coletas pendentes aguardando aprovação</p>
+          </div>
+          
+          <div id="lista-coletas-pendentes" class="coletas-list">
+            <!-- Coletas pendentes serão carregadas aqui -->
+          </div>
+        </div>
+
+        <!-- Aba Gerenciar Coletas -->
+        <div id="gerenciar-coletas-tab" class="tab-pane">
+          <div class="section-header">
+            <h2>🗂️ Gerenciar Coletas</h2>
+            <p>Coletas aprovadas - Editar, Excluir ou Concluir</p>
+          </div>
+          
+          <div id="lista-coletas-aprovadas" class="coletas-list">
+            <!-- Coletas aprovadas serão carregadas aqui -->
+          </div>
+        </div>
+
+        <!-- Aba Histórico -->
+        <div id="historico-tab" class="tab-pane">
+          <div class="section-header">
+            <h2>📜 Histórico de Coletas</h2>
+            <p>Todas as suas coletas concluídas</p>
+          </div>
+          
+          <div class="table-container">
+            <table id="tabela-historico">
+              <thead>
+                <tr>
+                  <th>Cliente</th>
+                  <th>Data</th>
+                  <th>Quantidade</th>
+                  <th>Valor</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Histórico será carregado aqui -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Aba Recompensas -->
+        <div id="recompensas-tab" class="tab-pane">
+          <div class="section-header">
+            <h2>🎁 Recompensas</h2>
+            <p>Consulte seu saldo e resgate via PIX</p>
+          </div>
+          
+          <div class="saldo-section">
+            <div class="saldo-card">
+              <h3>Saldo Atual</h3>
+              <div class="saldo-valor" id="saldo-atual">R$ 0,00</div>
+            </div>
+          </div>
+          
+          <div class="resgate-section">
+            <h3>Resgatar via PIX</h3>
+            <form id="resgate-form" onsubmit="event.preventDefault(); resgatarRecompensa();">
+              <div class="form-group">
+                <label for="valor-resgate">Valor do Resgate:</label>
+                <input type="number" id="valor-resgate" step="0.01" min="0.01" required />
+              </div>
+              
+              <div class="form-group">
+                <label for="nome-completo">Nome Completo:</label>
+                <input type="text" id="nome-completo" required />
+              </div>
+              
+              <div class="form-group">
+                <label for="chave-pix">Chave PIX:</label>
+                <input type="text" id="chave-pix" required />
+              </div>
+              
+              <button type="submit" class="btn-primary">Resgatar</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Aba Configurações -->
+        <div id="configuracoes-tab" class="tab-pane">
+          <div class="section-header">
+            <h2>⚙️ Configurações</h2>
+            <p>Gerencie suas configurações de conta</p>
+          </div>
+          
+          <div class="config-section">
+            <h3>Alterar Senha</h3>
+            <form id="senha-form" onsubmit="event.preventDefault(); alterarSenha();">
+              <div class="form-group">
+                <label for="senha-atual">Senha Atual:</label>
+                <input type="password" id="senha-atual" required />
+              </div>
+              
+              <div class="form-group">
+                <label for="nova-senha">Nova Senha:</label>
+                <input type="password" id="nova-senha" required />
+              </div>
+              
+              <div class="form-group">
+                <label for="confirmar-senha">Confirmar Nova Senha:</label>
+                <input type="password" id="confirmar-senha" required />
+              </div>
+              
+              <button type="submit" class="btn-primary">Alterar Senha</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Aba Relatórios -->
+        <div id="relatorios-tab" class="tab-pane">
+          <div class="section-header">
+            <h2>📊 Relatórios</h2>
+            <p>Análise detalhada das suas coletas</p>
+          </div>
+          
+          <div class="table-container">
+            <table id="tabela-relatorio">
+              <thead>
+                <tr>
+                  <th>Cliente</th>
+                  <th>Data</th>
+                  <th>Quantidade</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Relatório será carregado aqui -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Aba Suporte -->
+        <div id="suporte-tab" class="tab-pane">
+          <div class="section-header">
+            <h2>💬 Suporte</h2>
+            <p>Entre em contato conosco</p>
+          </div>
+          
+          <div class="suporte-content">
+            <div class="contact-info">
+              <h3>Informações de Contato</h3>
+              <p><strong>Email:</strong> suporte@ecoflow.com</p>
+              <p><strong>Telefone:</strong> (11) 9999-9999</p>
+              <p><strong>Horário:</strong> Segunda a Sexta, 8h às 18h</p>
+            </div>
+            
+            <div class="faq-section">
+              <h3>Perguntas Frequentes</h3>
+              <div class="faq-item">
+                <h4>Como funciona o sistema de coletas?</h4>
+                <p>Você cadastra uma coleta, ela fica pendente até ser aprovada, depois pode ser gerenciada e ao final vai para o histórico.</p>
+              </div>
+              <div class="faq-item">
+                <h4>Quanto vale cada garrafa?</h4>
+                <p>Cada garrafa vale R$ 0,85 e o valor é creditado automaticamente no seu saldo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="carregarDadosUsuario.js"></script>
+</body>
+</html>
+

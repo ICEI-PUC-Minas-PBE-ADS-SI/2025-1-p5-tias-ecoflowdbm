@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoFlow DBM - Relatórios</title>
+  <link rel="stylesheet" href="relatorios.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <h1>EcoFlow DBM</h1>
+  </header>
+
+  <main class="container">
+    <h2>Relatório de Coletas</h2>
+
+    <table id="tabela-relatorio">
+      <thead>
+        <tr>
+          <th>Nome do Cliente</th>
+          <th>Data</th>
+          <th>Quantidade</th>
+          <th>Valor (R$)</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+
+    <button class="botao-relatorio" onclick="gerarPDF()">📥 Baixar Relatório (PDF)</button>
+    <button class="botao-relatorio" onclick="gerarExcel()">📊 Baixar Relatório (Excel)</button>
+    <button class="voltar" onclick="window.location.href='home.html'">Voltar para a Tela Inicial</button>
+  </main>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    if (!verificarAutenticacao()) { /* Ação já tratada */ }
+
+    // Chamada para carregar o relatório ao carregar a página
+    document.addEventListener('DOMContentLoaded', carregarRelatorio); // Função GLOBAL do script.js
+
+    // Funções para gerar PDF e Excel (ficam aqui, pois dependem das libs importadas localmente)
+    function gerarPDF() {
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF();
+      doc.text("Relatório de Coletas - EcoFlow DBM", 14, 15);
+      doc.autoTable({ html: '#tabela-relatorio', startY: 20, headStyles: { fillColor: [0, 168, 107] } });
+      doc.save('relatorio-coletas.pdf');
+    }
+
+    function gerarExcel() {
+      const tabela = document.querySelector('#tabela-relatorio');
+      const htmlTabela = tabela.outerHTML.replace(/ /g, '%20');
+      const nomeArquivo = 'relatorio-coletas.xls';
+      const dataTipo = 'application/vnd.ms-excel';
+      const link = document.createElement('a');
+      link.href = 'data:' + dataTipo + ', ' + htmlTabela;
+      link.download = nomeArquivo;
+      link.click();
+    }
+  </script>
+
+</body>
+</html>

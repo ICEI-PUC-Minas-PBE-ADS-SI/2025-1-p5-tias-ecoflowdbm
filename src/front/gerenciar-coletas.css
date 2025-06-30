@@ -1,0 +1,127 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Fundo da página */
+body {
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+/* Cabeçalho */
+.header {
+  background-color: #00a86b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 28px;
+}
+
+/* Container principal */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Título */
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 12px 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+table th {
+  background-color: #00a86b;
+  color: white;
+  font-weight: 600;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Container para os botões dentro da célula */
+td > div.acoes {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Botões de ação */
+button.editar, button.concluir, button.cancelar {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  min-width: 75px;
+}
+
+button.editar {
+  background-color: #0066cc;
+}
+
+button.editar:hover {
+  background-color: #004999;
+}
+
+button.concluir {
+  background-color: #007f50;
+}
+
+button.concluir:hover {
+  background-color: #005f3a;
+}
+
+button.cancelar {
+  background-color: #cc0000;
+}
+
+button.cancelar:hover {
+  background-color: #990000;
+}
+
+/* Botão Voltar */
+.voltar {
+  margin-top: 25px;
+  width: 100%;
+  background-color: #ccc;
+  color: black;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.voltar:hover {
+  background-color: #aaa;
+}

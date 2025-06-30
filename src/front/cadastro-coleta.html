@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoFlow DBM - Cadastro de Coleta</title>
+  <link rel="stylesheet" href="cadastro.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #2E8B57, #3CB371);
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .header h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .header p {
+      opacity: 0.9;
+      font-size: 1.1rem;
+    }
+
+    .form-container {
+      padding: 40px;
+    }
+
+    .form-title {
+      text-align: center;
+      color: #2E8B57;
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 25px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #495057;
+      font-size: 1rem;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 15px;
+      border: 2px solid #e9ecef;
+      border-radius: 10px;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      background: #f8f9fa;
+    }
+
+    .form-group input:focus {
+      outline: none;
+      border-color: #2E8B57;
+      background: white;
+      box-shadow: 0 0 0 3px rgba(46, 139, 87, 0.1);
+      transform: translateY(-2px);
+    }
+
+    .form-group input::placeholder {
+      color: #adb5bd;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-bottom: 15px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #2E8B57, #3CB371);
+      color: white;
+      box-shadow: 0 5px 15px rgba(46, 139, 87, 0.3);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #1e5f3f, #2a8f5a);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(46, 139, 87, 0.4);
+    }
+
+    .btn-secondary {
+      background: #6c757d;
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      background: #545b62;
+      transform: translateY(-2px);
+    }
+
+    .info-card {
+      background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-left: 4px solid #2196f3;
+    }
+
+    .info-card h3 {
+      color: #1976d2;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .info-card p {
+      color: #424242;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .value-display {
+      background: linear-gradient(135deg, #f1f8e9, #dcedc8);
+      border-radius: 10px;
+      padding: 15px;
+      margin-top: 10px;
+      text-align: center;
+      border-left: 4px solid #4caf50;
+    }
+
+    .value-display strong {
+      color: #2e7d32;
+      font-size: 1.1rem;
+    }
+
+    .loading {
+      display: none;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .loading-spinner {
+      border: 3px solid #f3f3f3;
+      border-top: 3px solid #2E8B57;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 10px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
+
+      .container {
+        margin: 0;
+      }
+
+      .form-container {
+        padding: 20px;
+      }
+
+      .header {
+        padding: 20px;
+      }
+
+      .header h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>📦 EcoFlow DBM</h1>
+      <p>Sistema de Gestão de Coletas</p>
+    </div>
+
+    <div class="form-container">
+      <h2 class="form-title">Cadastro de Coleta</h2>
+
+      <div class="info-card">
+        <h3>💡 Como funciona?</h3>
+        <p>Cadastre sua coleta de garrafas e aguarde a aprovação. Após aprovada, você poderá gerenciar e concluir a coleta para receber o valor em seu saldo.</p>
+        <div class="value-display">
+          <strong>Valor por garrafa: R$ 0,85</strong>
+        </div>
+      </div>
+
+      <form id="form-coleta">
+        <div class="form-group">
+          <label for="cliente">👤 Nome do Cliente</label>
+          <input type="text" id="cliente" placeholder="Digite o nome completo do cliente" required>
+        </div>
+
+        <div class="form-group">
+          <label for="endereco">📍 Endereço</label>
+          <input type="text" id="endereco" placeholder="Endereço completo da coleta" required>
+        </div>
+
+        <div class="form-group">
+          <label for="quantidade">🍾 Quantidade de Garrafas</label>
+          <input type="number" id="quantidade" min="1" placeholder="Número de garrafas a serem coletadas" required>
+        </div>
+
+        <div class="form-group">
+          <label for="data">📅 Data da Coleta</label>
+          <input type="date" id="data" required>
+        </div>
+
+        <div class="loading" id="loading">
+          <div class="loading-spinner"></div>
+          <p>Cadastrando coleta...</p>
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="btn-submit">
+          ✅ Cadastrar Coleta
+        </button>
+      </form>
+
+      <button class="btn btn-secondary" onclick="window.location.href='home.html'">
+        🏠 Voltar para a Tela Inicial
+      </button>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+<script>
+  if (!verificarAutenticacao()) { /* Ação já tratada */ }
+
+  // Definir data mínima como hoje (esta função é global, mas o listener aqui é ok)
+  document.getElementById('data').min = new Date().toISOString().split('T')[0];
+
+  // O listener para calcular valor estimado é chamado pelo DOMContentLoaded global.
+  // Este evento listener específico para o formulário de coleta:
+  const form = document.getElementById('form-coleta');
+  const loading = document.getElementById('loading');
+  const btnSubmit = document.getElementById('btn-submit');
+
+  form.addEventListener('submit', async function(event) {
+    event.preventDefault();
+    loading.style.display = 'block';
+    btnSubmit.disabled = true;
+    btnSubmit.textContent = 'Cadastrando...';
+    try {
+      await adicionarColeta(); // Função GLOBAL do script.js
+      form.reset(); // Limpa o formulário após sucesso
+      document.querySelector('.value-display').innerHTML = '<strong>Valor por garrafa: R$ 0,85</strong>';
+      document.getElementById('data').min = new Date().toISOString().split('T')[0]; // Resetar data
+    } finally {
+      loading.style.display = 'none';
+      btnSubmit.disabled = false;
+      btnSubmit.textContent = '✅ Cadastrar Coleta';
+    }
+  });
+</script>
+
+</body>
+</html>
+
