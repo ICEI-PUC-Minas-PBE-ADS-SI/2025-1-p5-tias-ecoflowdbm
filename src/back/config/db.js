@@ -1,38 +1,18 @@
 const mysql = require("mysql2");
 require('dotenv').config();
 
-// Heroku ClearDB geralmente fornece uma URL de conexão
-const dbUrl = process.env.CLEARDB_DATABASE_URL || process.env.DATABASE_URL;
+const dbConfig = {
+  host: process.env.DB_HOST || "localhost",
+  user: process.env.DB_USER || "root",
+  password: process.env.DB_PASSWORD || "",
+  database: process.env.DB_NAME || "ecoflow_dbm",
+  waitForConnections: true,
+  connectionLimit: 10,
+  queueLimit: 0,
+  port: process.env.DB_PORT || 3306,  // Inclui a porta para o Azure, se precisar
+};
 
-let dbConfig;
-
-if (dbUrl) {
-    // Se estiver no Heroku e tiver uma URL de banco de dados
-    const url = new URL(dbUrl);
-    dbConfig = {
-        host: url.hostname,
-        user: url.username,
-        password: url.password,
-        database: url.pathname.substring(1), // Remove o '/' inicial
-        port: url.port || 3306,
-        waitForConnections: true,
-        connectionLimit: 10,
-        queueLimit: 0
-    };
-    console.log("Usando configuração de banco de dados do Heroku.");
-} else {
-    // Configuração local (do .env)
-    dbConfig = {
-        host: process.env.DB_HOST || "localhost",
-        user: process.env.DB_USER || "root",
-        password: process.env.DB_PASSWORD || "",
-        database: process.env.DB_NAME || "ecoflow_dbm",
-        waitForConnections: true,
-        connectionLimit: 10,
-        queueLimit: 0
-    };
-    console.log("Usando configuração de banco de dados local.");
-}
+console.log("Configuração do banco usada:", dbConfig.host);
 
 const db = mysql.createPool(dbConfig);
 
