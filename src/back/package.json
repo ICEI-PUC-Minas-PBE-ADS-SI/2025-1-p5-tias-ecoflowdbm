@@ -1,0 +1,20 @@
+{
+  "name": "ecoflow-backend",
+  "version": "1.0.0",
+  "description": "Backend da aplicação EcoFlow DBM",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.0",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.9.4"
+  }
+}

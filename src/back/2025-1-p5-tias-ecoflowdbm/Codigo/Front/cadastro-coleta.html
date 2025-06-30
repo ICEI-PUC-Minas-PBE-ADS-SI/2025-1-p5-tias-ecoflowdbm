@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoFlow DBM - Cadastro de Coleta</title>
+  <link rel="stylesheet" href="cadastro.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1>EcoFlow DBM</h1>
+  </header>
+
+  <main class="container">
+    <h2>Cadastro de Coleta</h2>
+
+    <form id="form-coleta">
+      <label for="cliente">Nome do Cliente</label>
+      <input type="text" id="cliente" required>
+
+      <label for="endereco">Endereço de Coleta</label>
+      <input type="text" id="endereco" required>
+
+      <label for="quantidade">Quantidade de Garrafas</label>
+      <input type="number" id="quantidade" required>
+
+      <label for="data">Data da Coleta</label>
+      <input type="date" id="data" required>
+
+      <button type="submit">Cadastrar Coleta</button>
+    </form>
+
+    <button class="voltar" onclick="window.location.href='home.html'">Voltar para a Tela Inicial</button>
+  </main>
+
+  <script>
+    const form = document.getElementById('form-coleta');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const cliente = document.getElementById('cliente').value;
+      const endereco = document.getElementById('endereco').value;
+      const quantidade = document.getElementById('quantidade').value;
+      const data = document.getElementById('data').value;
+
+      const coleta = { 
+        cliente, 
+        endereco, 
+        quantidade, 
+        data, 
+        status: "Em Andamento" 
+      };
+
+      let coletas = JSON.parse(localStorage.getItem('coletas')) || [];
+
+      coletas.push(coleta);
+
+      localStorage.setItem('coletas', JSON.stringify(coletas));
+
+      alert('Coleta cadastrada com sucesso!');
+      window.location.href = 'home.html';
+    });
+  </script>
+
+</body>
+</html>
