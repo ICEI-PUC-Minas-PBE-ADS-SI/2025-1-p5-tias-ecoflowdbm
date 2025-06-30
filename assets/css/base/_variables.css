@@ -1,0 +1,17 @@
+/* Front/assets/css/base/_variables.css */
+:root {
+  --primary-color: #00a86b;
+  --primary-dark-color: #007f50;
+  --secondary-color: #ccc;
+  --secondary-dark-color: #aaa;
+  --text-color: #333;
+  --bg-color: #f0f4f8;
+  --card-bg-color: white;
+  --shadow-color: rgba(0,0,0,0.1);
+
+  /* Cores para dark mode */
+  --dark-bg-color: #212121;
+  --dark-text-color: #e0e0e0;
+  --dark-card-bg-color: #333;
+  --dark-shadow-color: rgba(0,0,0,0.3);
+}

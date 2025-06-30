@@ -1,0 +1,9 @@
+/* Front/assets/css/components/_footer-common.css */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    margin-top: 30px; /* Espaçamento do conteúdo */
+}

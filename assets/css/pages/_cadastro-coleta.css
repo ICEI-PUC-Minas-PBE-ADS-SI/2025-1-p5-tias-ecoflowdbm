@@ -1,0 +1,102 @@
+/* Front/assets/css/pages/_cadastro-coleta.css */
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Fundo específico para esta página */
+  /* min-height e padding já estão no main-layout, pode remover daqui se não precisar override */
+}
+
+.container { /* Override para esta página específica */
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  padding: 0; /* O container principal agora não tem padding interno, o form-container terá */
+}
+
+.header { /* Override para esta página específica */
+  background: linear-gradient(135deg, #2E8B57, #3CB371);
+  padding: 30px;
+  margin: 0; /* Remove margens negativas */
+  border-radius: 20px 20px 0 0;
+}
+
+.header h1 {
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.form-container {
+  padding: 40px;
+}
+
+.form-title {
+  text-align: center;
+  color: #2E8B57;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.info-card {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-left: 4px solid #2196f3;
+}
+
+.info-card h3 {
+  color: #1976d2;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.info-card p {
+  color: #424242;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.value-display {
+  background: linear-gradient(135deg, #f1f8e9, #dcedc8);
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 10px;
+  text-align: center;
+  border-left: 4px solid #4caf50;
+}
+
+.value-display strong {
+  color: #2e7d32;
+  font-size: 1.1rem;
+}
+
+/* Loading Spinner */
+.loading {
+  display: none;
+  text-align: center;
+  padding: 20px;
+}
+
+.loading-spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #2E8B57;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+  /* body { padding: 10px; } remova se ja estiver no main-layout */
+  .container { margin: 0; }
+  .form-container { padding: 20px; }
+  .header { padding: 20px; }
+  .header h1 { font-size: 1.5rem; }
+}

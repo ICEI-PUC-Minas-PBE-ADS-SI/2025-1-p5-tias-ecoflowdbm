@@ -1,0 +1,40 @@
+/* Front/assets/css/pages/_acessar.css */
+.logo-acesso {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo-acesso img {
+  max-width: 150px; /* Ou o tamanho desejado para o logo */
+  height: auto;
+}
+
+.links {
+  text-align: right;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.links a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+p.cadastro {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+p.cadastro a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+p.cadastro a:hover {
+  text-decoration: underline;
+}

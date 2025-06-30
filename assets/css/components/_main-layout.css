@@ -1,0 +1,34 @@
+/* Front/assets/css/layout/_main-layout.css */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main.container {
+  max-width: 500px;
+  margin: 40px auto;
+  background-color: var(--card-bg-color);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  flex-grow: 1; /* Para ocupar o espaço restante */
+}
+
+/* Ajustes para containers maiores como o de coletas */
+main.container.large {
+  max-width: 1200px;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #6c757d;
+}
+
+.empty-state i {
+  font-size: 48px;
+  margin-bottom: 20px;
+  display: block;
+}

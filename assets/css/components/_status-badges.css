@@ -1,0 +1,35 @@
+/* Front/assets/css/components/_status-badges.css */
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  min-width: 80px;
+}
+
+.status-pendente {
+  background-color: #FFF3CD; /* Light yellow */
+  color: #856404; /* Dark yellow */
+  border: 1px solid #FFEAA7;
+}
+
+.status-aprovada {
+  background-color: #D4EDDA; /* Light green */
+  color: #155724; /* Dark green */
+  border: 1px solid #C3E6CB;
+}
+
+.status-concluida {
+    background-color: #CCE5FF; /* Light blue */
+    color: #004085; /* Dark blue */
+    border: 1px solid #B8DAFF;
+}
+
+.status-cancelado {
+    background-color: #F8D7DA; /* Light red */
+    color: #721C24; /* Dark red */
+    border: 1px solid #F5C6CB;
+}

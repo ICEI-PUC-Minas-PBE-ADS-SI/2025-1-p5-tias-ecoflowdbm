@@ -1,0 +1,117 @@
+/* Front/assets/css/components/_buttons.css */
+.btn,
+form button,
+.dark-mode-toggle,
+.voltar {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600; /* Pode ajustar conforme seu design */
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  display: inline-block; /* Para botões link */
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Estilo para botões de formulário */
+form button, .voltar {
+  width: 100%;
+  margin-top: 20px; /* Ajuste conforme necessário */
+}
+
+/* Estilo primário (verde) */
+.btn-primary,
+form button[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  box-shadow: 0 5px 15px rgba(46, 139, 87, 0.3);
+}
+
+.btn-primary:hover,
+form button[type="submit"]:hover {
+  background-color: var(--primary-dark-color);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(46, 139, 87, 0.4);
+}
+
+/* Estilo secundário (cinza) */
+.btn-secondary,
+.voltar {
+  background-color: var(--secondary-color);
+  color: black;
+  margin-top: 15px; /* Ajuste conforme necessário */
+}
+
+.btn-secondary:hover,
+.voltar:hover {
+  background-color: var(--secondary-dark-color);
+  transform: translateY(-2px);
+}
+
+/* Botões específicos de ações em tabelas/cards (editar, excluir, concluir) */
+button.btn-edit {
+    background-color: #007bff; /* Azul */
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    min-width: 75px;
+}
+button.btn-edit:hover { background-color: #0056b3; }
+
+button.btn-delete {
+    background-color: #dc3545; /* Vermelho */
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    min-width: 75px;
+}
+button.btn-delete:hover { background-color: #c82333; }
+
+button.btn-complete {
+    background-color: #28a745; /* Verde */
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    min-width: 75px;
+}
+button.btn-complete:hover { background-color: #1e7e34; }
+
+/* Botão de atualizar */
+.refresh-btn {
+    background-color: #17a2b8; /* Azul claro */
+    color: white;
+    margin-bottom: 20px;
+    width: auto; /* Para não ocupar 100% da largura */
+    display: block; /* Para ficar em sua própria linha */
+    margin-left: auto; /* Centraliza ou alinha a direita */
+    margin-right: auto; /* Centraliza ou alinha a esquerda */
+    padding: 8px 16px;
+    font-size: 0.9rem;
+}
+
+.refresh-btn:hover {
+    background-color: #138496;
+}
+
+/* Botão de Dark Mode */
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+.dark-mode-toggle:hover {
+    background-color: #e0e0e0;
+}

@@ -1,0 +1,34 @@
+/* Front/assets/css/components/_forms.css */
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #495057; /* Cor padrão para labels */
+  font-size: 1rem;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+form input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(var(--primary-color-rgb), 0.1); /* Usar RGB para shadow */
+  transform: translateY(-2px); /* Efeito sutil ao focar */
+}
+
+form input::placeholder {
+  color: #adb5bd;
+}
+
+/* Para grupos de formulário */
+.form-group {
+  margin-bottom: 25px;
+}

@@ -1,0 +1,47 @@
+/* Front/assets/css/pages/_historico.css */
+/* Estilos específicos para a tabela e cards de estatísticas do histórico */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #dee2e6;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2E8B57;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #6c757d;
+  text-transform: uppercase;
+}
+
+.valor-destaque { /* Estilo específico para o valor creditado no histórico */
+  color: #28a745;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Tabela (se diferente da global) */
+.table-container {
+    overflow-x: auto; /* Para tabelas que podem vazar */
+}
+
+/* Media queries específicas para histórico */
+@media (max-width: 768px) {
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+}

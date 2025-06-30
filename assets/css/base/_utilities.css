@@ -1,0 +1,15 @@
+/* Front/assets/css/base/_utilities.css */
+/* Exemplo: utilitários para espaçamento, flexbox, etc. */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.margin-top-15 {
+    margin-top: 15px;
+}
